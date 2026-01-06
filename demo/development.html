@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Development - My42</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/demo.css">
+</head>
+<body>
+    <div class="cosmic-bg"></div>
+
+    <!-- App Header -->
+    <header class="app-header">
+        <div class="app-header-container">
+            <a href="../index.html" class="app-header-logo">my42</a>
+
+            <div class="app-header-nav-container">
+                <a href="life.html" class="app-header-link">Life</a>
+                <a href="goals.html" class="app-header-link">Goals</a>
+                <a href="sprints.html" class="app-header-link">Sprints</a>
+            </div>
+
+            <div class="app-header-right">
+                <button class="app-header-menu-toggle">Menu</button>
+                <a href="settings.html" class="app-header-settings">Settings</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container" style="margin-top: 7rem; max-width: 1000px;">
+
+        <!-- TOP: Development Dashboard -->
+        <section style="margin-bottom: 3rem; padding-bottom: 3rem; border-bottom: 2px solid rgba(255,255,255,0.1);">
+
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <h1 style="font-size: 2rem; margin-bottom: 0.5rem;">Development</h1>
+                <p style="color: #808080; font-size: 0.95rem;">Agent: Sage</p>
+            </div>
+
+            <!-- Development Score + Primary KPIs -->
+            <div style="display: grid; grid-template-columns: 200px 1fr; gap: 2rem; margin-bottom: 2rem;">
+
+                <!-- Development Score Circle (secondary) -->
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <svg width="160" height="160" viewBox="0 0 160 160">
+                        <defs>
+                            <linearGradient id="devGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#A78BFA;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="80" cy="80" r="60" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="12"/>
+                        <circle cx="80" cy="80" r="60" fill="none"
+                                stroke="url(#devGradient)"
+                                stroke-width="12"
+                                stroke-dasharray="377"
+                                stroke-dashoffset="79"
+                                stroke-linecap="round"
+                                transform="rotate(-90 80 80)"/>
+                        <text x="80" y="75" text-anchor="middle" fill="#ffffff" font-size="38" font-weight="900">79</text>
+                        <text x="80" y="95" text-anchor="middle" fill="#8B5CF6" font-size="13" font-weight="600">▲ +2</text>
+                    </svg>
+                </div>
+
+                <!-- 4 Primary KPIs (compact rows) -->
+                <div style="display: grid; gap: 0.75rem;">
+                    <div style="display: flex; justify-content: space-between; padding: 1rem; background: rgba(255,255,255,0.02); border-radius: 8px;">
+                        <span style="color: #808080; font-size: 0.9rem;">Consistency (14d active)</span>
+                        <span style="color: #e0e0e0; font-weight: 700; font-size: 1.1rem;">11/14 days</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; padding: 1rem; background: rgba(255,255,255,0.02); border-radius: 8px;">
+                        <span style="color: #808080; font-size: 0.9rem;">Learning Blocks (7d)</span>
+                        <span style="color: #e0e0e0; font-weight: 700; font-size: 1.1rem;">14 blocks</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; padding: 1rem; background: rgba(255,255,255,0.02); border-radius: 8px;">
+                        <span style="color: #808080; font-size: 0.9rem;">Output Artifacts (30d)</span>
+                        <span style="color: #e0e0e0; font-weight: 700; font-size: 1.1rem;">8 shipped</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; padding: 1rem; background: rgba(139, 92, 246, 0.05); border-radius: 8px; border-left: 3px solid #8B5CF6;">
+                        <span style="color: #808080; font-size: 0.9rem;">Apply-to-Learn Ratio</span>
+                        <span style="color: #8B5CF6; font-weight: 700; font-size: 1.1rem;">0.57 (8/14)</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SECTION: Active Skill Tracks -->
+        <section style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Active Skill Tracks</h2>
+
+            <div style="background: rgba(255,255,255,0.02); border-radius: 8px; overflow: hidden;">
+                <table style="width: 100%; border-collapse: collapse;">
+                    <thead>
+                        <tr style="background: rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.1);">
+                            <th style="text-align: left; padding: 0.75rem 1rem; font-size: 0.85rem; color: #808080; font-weight: 600;">Skill</th>
+                            <th style="text-align: left; padding: 0.75rem 1rem; font-size: 0.85rem; color: #808080; font-weight: 600;">Level</th>
+                            <th style="text-align: left; padding: 0.75rem 1rem; font-size: 0.85rem; color: #808080; font-weight: 600;">Recent Activity</th>
+                            <th style="text-align: center; padding: 0.75rem 1rem; font-size: 0.85rem; color: #808080; font-weight: 600;">Output Linked</th>
+                            <th style="text-align: center; padding: 0.75rem 1rem; font-size: 0.85rem; color: #808080; font-weight: 600;">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Skill 1: AI Systems -->
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.05); cursor: pointer;" onclick="window.location.href='development-skill.html'">
+                            <td style="padding: 1rem;">
+                                <p style="font-weight: 600; color: #e0e0e0; margin: 0;">AI Systems & LLMs</p>
+                                <p style="font-size: 0.85rem; color: #808080; margin: 0.25rem 0 0 0;">Building agentic systems</p>
+                            </td>
+                            <td style="padding: 1rem;">
+                                <span style="font-size: 0.85rem; color: #8B5CF6;">Intermediate</span>
+                            </td>
+                            <td style="padding: 1rem; font-size: 0.9rem; color: #a0a0a0;">Yesterday — Anthropic docs</td>
+                            <td style="padding: 1rem; text-align: center;">
+                                <span style="font-size: 0.75rem; padding: 0.3rem 0.6rem; background: rgba(16, 185, 129, 0.2); color: #10B981; border-radius: 12px; font-weight: 600;">Yes</span>
+                            </td>
+                            <td style="padding: 1rem; text-align: center;">
+                                <span style="font-size: 0.75rem; padding: 0.3rem 0.6rem; background: rgba(16, 185, 129, 0.2); color: #10B981; border-radius: 12px; font-weight: 600;">Active</span>
+                            </td>
+                        </tr>
+
+                        <!-- Skill 2: Writing -->
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.05); cursor: pointer;" onclick="window.location.href='development-skill.html'">
+                            <td style="padding: 1rem;">
+                                <p style="font-weight: 600; color: #e0e0e0; margin: 0;">Technical Writing</p>
+                                <p style="font-size: 0.85rem; color: #808080; margin: 0.25rem 0 0 0;">Clear explanations + docs</p>
+                            </td>
+                            <td style="padding: 1rem;">
+                                <span style="font-size: 0.85rem; color: #8B5CF6;">Intermediate</span>
+                            </td>
+                            <td style="padding: 1rem; font-size: 0.9rem; color: #a0a0a0;">3 days ago — Blog draft</td>
+                            <td style="padding: 1rem; text-align: center;">
+                                <span style="font-size: 0.75rem; padding: 0.3rem 0.6rem; background: rgba(16, 185, 129, 0.2); color: #10B981; border-radius: 12px; font-weight: 600;">Yes</span>
+                            </td>
+                            <td style="padding: 1rem; text-align: center;">
+                                <span style="font-size: 0.75rem; padding: 0.3rem 0.6rem; background: rgba(16, 185, 129, 0.2); color: #10B981; border-radius: 12px; font-weight: 600;">Active</span>
+                            </td>
+                        </tr>
+
+                        <!-- Skill 3: Product Strategy -->
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.05); cursor: pointer;" onclick="window.location.href='development-skill.html'">
+                            <td style="padding: 1rem;">
+                                <p style="font-weight: 600; color: #e0e0e0; margin: 0;">Product Strategy</p>
+                                <p style="font-size: 0.85rem; color: #808080; margin: 0.25rem 0 0 0;">Roadmapping + prioritization</p>
+                            </td>
+                            <td style="padding: 1rem;">
+                                <span style="font-size: 0.85rem; color: #8B5CF6;">Advanced</span>
+                            </td>
+                            <td style="padding: 1rem; font-size: 0.9rem; color: #a0a0a0;">1 week ago — Case study</td>
+                            <td style="padding: 1rem; text-align: center;">
+                                <span style="font-size: 0.75rem; padding: 0.3rem 0.6rem; background: rgba(16, 185, 129, 0.2); color: #10B981; border-radius: 12px; font-weight: 600;">Yes</span>
+                            </td>
+                            <td style="padding: 1rem; text-align: center;">
+                                <span style="font-size: 0.75rem; padding: 0.3rem 0.6rem; background: rgba(102, 126, 234, 0.2); color: #667eea; border-radius: 12px; font-weight: 600;">Active</span>
+                            </td>
+                        </tr>
+
+                        <!-- Skill 4: React Architecture -->
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.05); cursor: pointer;" onclick="window.location.href='development-skill.html'">
+                            <td style="padding: 1rem;">
+                                <p style="font-weight: 600; color: #e0e0e0; margin: 0;">React Architecture</p>
+                                <p style="font-size: 0.85rem; color: #808080; margin: 0.25rem 0 0 0;">Component patterns + state</p>
+                            </td>
+                            <td style="padding: 1rem;">
+                                <span style="font-size: 0.85rem; color: #8B5CF6;">Intermediate</span>
+                            </td>
+                            <td style="padding: 1rem; font-size: 0.9rem; color: #a0a0a0;">5 days ago — Refactor PR</td>
+                            <td style="padding: 1rem; text-align: center;">
+                                <span style="font-size: 0.75rem; padding: 0.3rem 0.6rem; background: rgba(16, 185, 129, 0.2); color: #10B981; border-radius: 12px; font-weight: 600;">Yes</span>
+                            </td>
+                            <td style="padding: 1rem; text-align: center;">
+                                <span style="font-size: 0.75rem; padding: 0.3rem 0.6rem; background: rgba(102, 126, 234, 0.2); color: #667eea; border-radius: 12px; font-weight: 600;">Active</span>
+                            </td>
+                        </tr>
+
+                        <!-- Skill 5: System Design -->
+                        <tr style="cursor: pointer;" onclick="window.location.href='development-skill.html'">
+                            <td style="padding: 1rem;">
+                                <p style="font-weight: 600; color: #e0e0e0; margin: 0;">System Design</p>
+                                <p style="font-size: 0.85rem; color: #808080; margin: 0.25rem 0 0 0;">Scalable architectures</p>
+                            </td>
+                            <td style="padding: 1rem;">
+                                <span style="font-size: 0.85rem; color: #8B5CF6;">Foundation</span>
+                            </td>
+                            <td style="padding: 1rem; font-size: 0.9rem; color: #F59E0B;">10 days ago — Reading</td>
+                            <td style="padding: 1rem; text-align: center;">
+                                <span style="font-size: 0.75rem; padding: 0.3rem 0.6rem; background: rgba(239, 68, 68, 0.2); color: #EF4444; border-radius: 12px; font-weight: 600;">No</span>
+                            </td>
+                            <td style="padding: 1rem; text-align: center;">
+                                <span style="font-size: 0.75rem; padding: 0.3rem 0.6rem; background: rgba(245, 158, 11, 0.2); color: #F59E0B; border-radius: 12px; font-weight: 600;">Drifting</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p style="font-size: 0.85rem; color: #808080; margin-top: 1rem;">Click any skill to view learning/output log</p>
+        </section>
+
+        <!-- SECTION: Contribution to Life Score -->
+        <section style="margin-bottom: 3rem; padding: 1.5rem; background: rgba(139, 92, 246, 0.05); border-left: 3px solid #8B5CF6; border-radius: 8px;">
+            <h3 style="font-size: 1.1rem; margin-bottom: 1rem; color: #8B5CF6;">Impact on Life Score</h3>
+            <p style="color: #a0a0a0; margin-bottom: 0.75rem; font-size: 0.95rem;">
+                <strong style="color: #8B5CF6;">Medium Impact Sphere</strong> — Development is weighted at 15% of your Life Score.
+            </p>
+            <p style="color: #a0a0a0; margin-bottom: 0.75rem; font-size: 0.95rem;">
+                <strong>Sensitivity:</strong> Sustained development consistency → +1–2 Life Score over time (long-term compounding)
+            </p>
+            <p style="color: #8B5CF6; font-weight: 600; font-size: 0.95rem; margin-bottom: 1.5rem;">
+                Current role: <strong>Steady contributor</strong> — Consistent learning + output cadence supporting Business sphere growth
+            </p>
+
+            <!-- Explainable insight -->
+            <div style="background: rgba(255,255,255,0.02); border-radius: 8px; padding: 1.25rem; margin-top: 1rem;">
+                <h4 style="color: #e0e0e0; margin-bottom: 0.75rem; font-size: 1rem;">Why Development score rose +2 this week</h4>
+                <p style="color: #a0a0a0; margin-bottom: 0.5rem; font-size: 0.9rem;">
+                    <strong style="color: #e0e0e0;">Trigger:</strong> 11/14 days active. 14 learning blocks completed (2/day avg). 8 outputs shipped in 30d window.
+                </p>
+                <p style="color: #a0a0a0; margin-bottom: 0.5rem; font-size: 0.9rem;">
+                    <strong style="color: #e0e0e0;">Evidence:</strong> AI Systems skill: 4 learning sessions + 3 agent implementations shipped. Writing: 2 blog posts published. Apply-to-learn ratio 0.57 (above 0.5 target). Consistency high.
+                </p>
+                <p style="color: #a0a0a0; margin-bottom: 0.5rem; font-size: 0.9rem;">
+                    <strong style="color: #e0e0e0;">Interpretation:</strong> Learning translating into tangible outputs. Not passive consumption. Skill development directly supporting My42 MVP launch (AI systems) + YouTube content (writing). Sustainable pace.
+                </p>
+                <p style="color: #8B5CF6; font-weight: 600; font-size: 0.9rem;">
+                    → Suggested action: Maintain 2 learning blocks/day rhythm. Address System Design drift (10d inactive). Schedule 1 practice project to convert learning → output.
+                </p>
+            </div>
+        </section>
+
+        <!-- SECTION: Insights -->
+        <section style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Insights</h2>
+
+            <!-- Insight 1: System Design drift -->
+            <div style="padding: 1.5rem; background: rgba(245, 158, 11, 0.05); border-left: 3px solid #F59E0B; border-radius: 8px; margin-bottom: 1rem;">
+                <h3 style="font-size: 1.1rem; color: #F59E0B; margin-bottom: 1rem;">Skill drift detected: System Design (10 days inactive)</h3>
+                <div style="margin-bottom: 1rem;">
+                    <p style="color: #a0a0a0; margin-bottom: 0.5rem; font-size: 0.95rem;"><strong style="color: #e0e0e0;">Trigger:</strong> System Design track untouched for 10 days. Last activity: reading (no output). Status: drifting.</p>
+                    <p style="color: #a0a0a0; margin-bottom: 0.5rem; font-size: 0.95rem;"><strong style="color: #e0e0e0;">Evidence:</strong> Foundation-level skill (early stage). No applied output ever shipped. 3 learning sessions total (all reading). Competing priorities: My42 launch consuming capacity.</p>
+                    <p style="color: #a0a0a0; margin-bottom: 0.5rem; font-size: 0.95rem;"><strong style="color: #e0e0e0;">Interpretation:</strong> Foundational learning without application stalls. System Design valuable but not urgent during Launch Sprint. Risk: forgetting concepts without practice. Opportunity cost: time better spent on AI Systems (high ROI now).</p>
+                    <p style="color: #F59E0B; font-weight: 600; font-size: 0.95rem;">→ Suggested: Either (1) pause System Design track explicitly (reactivate post-launch) OR (2) commit 1 session/week minimum with hands-on practice (build toy distributed system).</p>
+                </div>
+            </div>
+
+            <!-- Insight 2: AI Systems high ROI -->
+            <div style="padding: 1.5rem; background: rgba(16, 185, 129, 0.05); border-left: 3px solid #10B981; border-radius: 8px; margin-bottom: 1rem;">
+                <h3 style="font-size: 1.1rem; color: #10B981; margin-bottom: 1rem;">AI Systems learning directly powering My42 launch</h3>
+                <div style="margin-bottom: 1rem;">
+                    <p style="color: #a0a0a0; margin-bottom: 0.5rem; font-size: 0.95rem;"><strong style="color: #e0e0e0;">Trigger:</strong> AI Systems skill: 4 learning sessions this week + 3 agent implementations shipped to production.</p>
+                    <p style="color: #a0a0a0; margin-bottom: 0.5rem; font-size: 0.95rem;"><strong style="color: #e0e0e0;">Evidence:</strong> Learning → output cycle < 3 days. Examples: Anthropic docs study → agent pattern implementation → My42 feature shipped. Immediate application creating compounding returns (skill + product progress).</p>
+                    <p style="color: #a0a0a0; margin-bottom: 0.5rem; font-size: 0.95rem;"><strong style="color: #e0e0e0;">Interpretation:</strong> High-ROI skill investment. Learning tightly coupled with Business sphere execution. Not abstract study—solving real problems. Sustainable learning-by-doing model.</p>
+                    <p style="color: #10B981; font-weight: 600; font-size: 0.95rem;">→ Suggested: Protect AI Systems learning time (2-3 blocks/week). Continue tight learn-apply loop. Document patterns learned (future content/teaching opportunity).</p>
+                </div>
+            </div>
+
+            <!-- Insight 3: Apply-to-learn ratio healthy -->
+            <div style="padding: 1.5rem; background: rgba(255,255,255,0.02); border-left: 3px solid #667eea; border-radius: 8px; margin-bottom: 1rem;">
+                <h3 style="font-size: 1.1rem; color: #667eea; margin-bottom: 1rem;">Apply-to-learn ratio healthy at 0.57 (above 0.5 target)</h3>
+                <div style="margin-bottom: 1rem;">
+                    <p style="color: #a0a0a0; margin-bottom: 0.5rem; font-size: 0.95rem;"><strong style="color: #e0e0e0;">Trigger:</strong> 14 learning blocks (7d) vs 8 outputs shipped (30d). Ratio: 0.57. Target: >0.5 to avoid passive consumption.</p>
+                    <p style="color: #a0a0a0; margin-bottom: 0.5rem; font-size: 0.95rem;"><strong style="color: #e0e0e0;">Evidence:</strong> Outputs include: 3 agent implementations, 2 blog posts, 2 refactor PRs, 1 architecture doc. Mix of code + writing. Learning translating into shipped work, not just notes.</p>
+                    <p style="color: #a0a0a0; margin-bottom: 0.5rem; font-size: 0.95rem;"><strong style="color: #e0e0e0;">Interpretation:</strong> Healthy balance. Learning is input, output is proof of integration. Ratio above 0.5 means more than half of learning effort results in concrete deliverables. Sustainable development cadence.</p>
+                    <p style="color: #667eea; font-weight: 600; font-size: 0.95rem;">→ Suggested: Maintain 0.5+ ratio. If ratio drops below 0.4, trigger "learning without output" alert. Adjust by increasing application projects or reducing passive study.</p>
+                </div>
+            </div>
+
+            <!-- Insight 4: Too many parallel tracks (warning) -->
+            <div style="padding: 1.5rem; background: rgba(255,255,255,0.02); border-left: 3px solid #808080; border-radius: 8px;">
+                <h3 style="font-size: 1.1rem; color: #808080; margin-bottom: 1rem;">5 parallel skill tracks may fragment focus</h3>
+                <div style="margin-bottom: 1rem;">
+                    <p style="color: #a0a0a0; margin-bottom: 0.5rem; font-size: 0.95rem;"><strong style="color: #e0e0e0;">Trigger:</strong> 5 active skill tracks: AI Systems, Writing, Product Strategy, React Architecture, System Design. Capacity split.</p>
+                    <p style="color: #a0a0a0; margin-bottom: 0.5rem; font-size: 0.95rem;"><strong style="color: #e0e0e0;">Evidence:</strong> 2-3 tracks getting consistent attention (AI, Writing, Product). 2 tracks drifting (React 5d, System Design 10d). Context-switching overhead. Depth vs breadth tradeoff.</p>
+                    <p style="color: #a0a0a0; margin-bottom: 0.5rem; font-size: 0.95rem;"><strong style="color: #e0e0e0;">Interpretation:</strong> Portfolio breadth high but diluted focus risk. Optimal: 2-3 active tracks during high-intensity periods (Launch Sprint). Current load manageable but close to fragmentation threshold.</p>
+                    <p style="color: #808080; font-weight: 600; font-size: 0.95rem;">→ Suggested: Consider pausing System Design + React Architecture during Launch Sprint. Focus: AI Systems (70%), Writing (20%), Product Strategy (10%). Reactivate paused tracks post-launch.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SECTION: Today Actions -->
+        <section style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Today</h2>
+
+            <div class="task-list">
+                <div class="task-row">
+                    <input type="checkbox">
+                    <span class="task-text">1 focused learning block (30min) — AI Systems: study Anthropic tool use patterns</span>
+                    <span class="task-tag task-tag-development">Routine</span>
+                </div>
+                <div class="task-row">
+                    <input type="checkbox">
+                    <span class="task-text">Apply: implement agent pattern learned yesterday in My42 codebase (1 artifact shipped)</span>
+                    <span class="task-tag task-tag-development">Output</span>
+                </div>
+                <div class="task-row">
+                    <input type="checkbox">
+                    <span class="task-text">Write 1 page — blog post draft on AI agent architecture (publish tomorrow)</span>
+                    <span class="task-tag task-tag-development">Output</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- NAV: Sample Skill Track -->
+        <section style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Explore Skills</h2>
+            <div style="display: grid; grid-template-columns: 1fr; gap: 1rem;">
+                <a href="development-skill.html" class="card" style="text-decoration: none; color: inherit; background: rgba(139, 92, 246, 0.05); border: 1px solid rgba(139, 92, 246, 0.2);">
+                    <h4 style="color: #8B5CF6; margin-bottom: 0.5rem;">AI Systems & LLMs (Sample Track)</h4>
+                    <p style="font-size: 0.9rem; color: #a0a0a0;">View learning log, output log, progress signals →</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Agent Dialog -->
+        <section style="margin-bottom: 4rem; padding: 1.5rem; background: rgba(255,255,255,0.02); border-radius: 8px;">
+            <h3 style="font-size: 1.1rem; margin-bottom: 1rem; color: #8B5CF6;">Sage (Development Agent)</h3>
+
+            <div style="margin-bottom: 1rem;">
+                <div style="padding: 0.75rem; background: rgba(139, 92, 246, 0.1); border-radius: 6px; margin-bottom: 0.5rem;">
+                    <p style="font-size: 0.85rem; color: #808080; margin-bottom: 0.25rem;">1 hour ago</p>
+                    <p style="font-size: 0.95rem; color: #e0e0e0;">79. Steady. Consistency 11/14 days (good). Apply-to-learn ratio 0.57 (healthy). AI Systems track powering My42 launch. System Design drifting (10d). Consider pausing non-critical tracks during Sprint.</p>
+                </div>
+                <div style="padding: 0.75rem; background: rgba(139, 92, 246, 0.1); border-radius: 6px; margin-bottom: 0.5rem;">
+                    <p style="font-size: 0.85rem; color: #808080; margin-bottom: 0.25rem;">Yesterday</p>
+                    <p style="font-size: 0.95rem; color: #e0e0e0;">Learning without output creates knowledge decay. Maintain tight learn-apply loops. If you study something, ship an artifact within 3 days. Otherwise, retention drops 60%.</p>
+                </div>
+            </div>
+
+            <input type="text" placeholder="Ask Sage anything..." style="width: 100%; padding: 0.75rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; color: #e0e0e0; margin-bottom: 1rem; font-family: inherit;">
+
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                <button style="padding: 0.5rem 1rem; background: rgba(139, 92, 246, 0.2); border: 1px solid #8B5CF6; border-radius: 6px; color: #8B5CF6; cursor: pointer; font-size: 0.85rem;">Show skill progression</button>
+                <button style="padding: 0.5rem 1rem; background: rgba(139, 92, 246, 0.2); border: 1px solid #8B5CF6; border-radius: 6px; color: #8B5CF6; cursor: pointer; font-size: 0.85rem;">Suggest next learn</button>
+                <button style="padding: 0.5rem 1rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; color: #808080; cursor: pointer; font-size: 0.85rem;">Snooze</button>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="../js/tasks.js"></script>
+</body>
+</html>

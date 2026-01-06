@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goals Sphere - My42</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/demo.css">
+</head>
+<body>
+    <div class="cosmic-bg"></div>
+
+    <!-- App Header -->
+    <header class="app-header">
+        <div class="app-header-container">
+            <a href="../index.html" class="app-header-logo">my42</a>
+
+            <div class="app-header-nav-container">
+                <a href="life.html" class="app-header-link">Life</a>
+                <a href="goals.html" class="app-header-link active">Goals</a>
+                <a href="sprints.html" class="app-header-link">Sprints</a>
+            </div>
+
+            <div class="app-header-right">
+                <button class="app-header-menu-toggle">Menu</button>
+                <a href="settings.html" class="app-header-settings">Settings</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container" style="margin-top: 7rem; max-width: 1100px;">
+
+        <!-- TOP: Goals Dashboard -->
+        <section style="margin-bottom: 3rem; padding-bottom: 3rem; border-bottom: 2px solid rgba(255,255,255,0.1);">
+
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <h1 style="font-size: 2rem; margin-bottom: 0.5rem;">Goals</h1>
+                <p style="color: #808080; font-size: 0.95rem;">Agent: Apex</p>
+            </div>
+
+            <!-- Goals Score and Metrics -->
+            <div style="display: grid; grid-template-columns: 200px 1fr; gap: 2rem; margin-bottom: 2rem;">
+
+                <!-- Goals Score Circle (Prominent) -->
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <svg width="180" height="180" viewBox="0 0 180 180">
+                        <defs>
+                            <linearGradient id="goalsGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#667eea;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="90" cy="90" r="70" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="14"/>
+                        <circle cx="90" cy="90" r="70" fill="none"
+                                stroke="url(#goalsGradient)"
+                                stroke-width="14"
+                                stroke-dasharray="439.6"
+                                stroke-dashoffset="92"
+                                stroke-linecap="round"
+                                transform="rotate(-90 90 90)"/>
+                        <text x="90" y="90" text-anchor="middle" fill="#ffffff" font-size="48" font-weight="900">79</text>
+                        <text x="90" y="110" text-anchor="middle" fill="#8B5CF6" font-size="15" font-weight="600">Goals Score</text>
+                    </svg>
+                </div>
+
+                <!-- Compact Metrics Rings -->
+                <div style="display: grid; gap: 1rem;">
+                    <!-- Alignment (Weekly) -->
+                    <div style="display: flex; align-items: center; gap: 1.5rem; padding: 1rem; background: rgba(16, 185, 129, 0.05); border-left: 3px solid #10B981; border-radius: 8px;">
+                        <svg width="60" height="60" viewBox="0 0 60 60">
+                            <circle cx="30" cy="30" r="24" fill="none" stroke="rgba(16, 185, 129, 0.2)" stroke-width="5"/>
+                            <circle cx="30" cy="30" r="24" fill="none" stroke="#10B981" stroke-width="5"
+                                    stroke-dasharray="150.7" stroke-dashoffset="19" stroke-linecap="round"
+                                    transform="rotate(-90 30 30)"/>
+                            <text x="30" y="35" text-anchor="middle" fill="#10B981" font-size="16" font-weight="700">87</text>
+                        </svg>
+                        <div>
+                            <p style="font-size: 0.85rem; color: #808080; margin: 0 0 0.25rem 0;">Alignment (7d)</p>
+                            <p style="font-size: 0.95rem; color: #10B981; margin: 0; font-weight: 600;">High • 7/8 goals active</p>
+                        </div>
+                    </div>
+
+                    <!-- Conflict Load -->
+                    <div style="display: flex; align-items: center; gap: 1.5rem; padding: 1rem; background: rgba(245, 158, 11, 0.05); border-left: 3px solid #F59E0B; border-radius: 8px;">
+                        <svg width="60" height="60" viewBox="0 0 60 60">
+                            <circle cx="30" cy="30" r="24" fill="none" stroke="rgba(245, 158, 11, 0.2)" stroke-width="5"/>
+                            <circle cx="30" cy="30" r="24" fill="none" stroke="#F59E0B" stroke-width="5"
+                                    stroke-dasharray="150.7" stroke-dashoffset="83" stroke-linecap="round"
+                                    transform="rotate(-90 30 30)"/>
+                            <text x="30" y="35" text-anchor="middle" fill="#F59E0B" font-size="16" font-weight="700">45</text>
+                        </svg>
+                        <div>
+                            <p style="font-size: 0.85rem; color: #808080; margin: 0 0 0.25rem 0;">Conflict Load</p>
+                            <p style="font-size: 0.95rem; color: #F59E0B; margin: 0; font-weight: 600;">Medium • 2 conflicts detected</p>
+                        </div>
+                    </div>
+
+                    <!-- Focus Clarity -->
+                    <div style="display: flex; align-items: center; gap: 1.5rem; padding: 1rem; background: rgba(139, 92, 246, 0.05); border-left: 3px solid #8B5CF6; border-radius: 8px;">
+                        <svg width="60" height="60" viewBox="0 0 60 60">
+                            <circle cx="30" cy="30" r="24" fill="none" stroke="rgba(139, 92, 246, 0.2)" stroke-width="5"/>
+                            <circle cx="30" cy="30" r="24" fill="none" stroke="#8B5CF6" stroke-width="5"
+                                    stroke-dasharray="150.7" stroke-dashoffset="29" stroke-linecap="round"
+                                    transform="rotate(-90 30 30)"/>
+                            <text x="30" y="35" text-anchor="middle" fill="#8B5CF6" font-size="16" font-weight="700">81</text>
+                        </svg>
+                        <div>
+                            <p style="font-size: 0.85rem; color: #808080; margin: 0 0 0.25rem 0;">Focus Clarity</p>
+                            <p style="font-size: 0.95rem; color: #8B5CF6; margin: 0; font-weight: 600;">Clear • Top 3 prioritized</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Active Sprints Strip -->
+            <div style="background: rgba(139, 92, 246, 0.05); border-radius: 8px; padding: 1rem; display: flex; align-items: center; gap: 1rem;">
+                <p style="font-size: 0.85rem; color: #808080; margin: 0;">Active Sprints:</p>
+                <span style="font-size: 0.85rem; padding: 0.25rem 0.75rem; background: rgba(16, 185, 129, 0.2); color: #10B981; border-radius: 12px; border: 1px solid #10B981;">Health Reset (14d left)</span>
+                <span style="font-size: 0.85rem; padding: 0.25rem 0.75rem; background: rgba(59, 130, 246, 0.2); color: #3B82F6; border-radius: 12px; border: 1px solid #3B82F6;">Launch Sprint (21d left)</span>
+                <span style="font-size: 0.85rem; padding: 0.25rem 0.75rem; background: rgba(245, 158, 11, 0.2); color: #F59E0B; border-radius: 12px; border: 1px solid #F59E0B;">Finance Discipline (8d left)</span>
+            </div>
+        </section>
+
+        <!-- SECTION: Active Goals -->
+        <section style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Active Goals (8)</h2>
+
+            <!-- Goals Table -->
+            <div style="background: rgba(255,255,255,0.02); border-radius: 8px; overflow: hidden;">
+                <table style="width: 100%; border-collapse: collapse;">
+                    <thead>
+                        <tr style="background: rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.1);">
+                            <th style="text-align: left; padding: 0.75rem 1rem; font-size: 0.85rem; color: #808080; font-weight: 600;">Goal</th>
+                            <th style="text-align: left; padding: 0.75rem 1rem; font-size: 0.85rem; color: #808080; font-weight: 600;">Horizon</th>
+                            <th style="text-align: left; padding: 0.75rem 1rem; font-size: 0.85rem; color: #808080; font-weight: 600;">Spheres</th>
+                            <th style="text-align: left; padding: 0.75rem 1rem; font-size: 0.85rem; color: #808080; font-weight: 600;">Sprints</th>
+                            <th style="text-align: center; padding: 0.75rem 1rem; font-size: 0.85rem; color: #808080; font-weight: 600;">Status</th>
+                            <th style="text-align: center; padding: 0.75rem 1rem; font-size: 0.85rem; color: #808080; font-weight: 600;">Alignment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem;"><a href="goal.html" style="color: #8B5CF6; text-decoration: none; font-weight: 600;">Launch My42 product</a></td>
+                            <td style="padding: 1rem; font-size: 0.9rem; color: #a0a0a0;">Mid</td>
+                            <td style="padding: 1rem;">
+                                <span style="font-size: 0.75rem; padding: 0.2rem 0.5rem; background: rgba(59, 130, 246, 0.2); color: #3B82F6; border-radius: 8px; margin-right: 0.25rem;">Business</span>
+                                <span style="font-size: 0.75rem; padding: 0.2rem 0.5rem; background: rgba(20, 184, 166, 0.2); color: #14B8A6; border-radius: 8px;">Dev</span>
+                            </td>
+                            <td style="padding: 1rem; font-size: 0.85rem; color: #3B82F6;">Launch Sprint</td>
+                            <td style="padding: 1rem; text-align: center;"><span style="font-size: 0.85rem; padding: 0.25rem 0.75rem; background: rgba(16, 185, 129, 0.2); color: #10B981; border-radius: 12px;">Active</span></td>
+                            <td style="padding: 1rem; text-align: center; font-weight: 700; color: #10B981;">91</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem;"><a href="goal.html" style="color: #8B5CF6; text-decoration: none; font-weight: 600;">Maintain 15+ WHOOP strain</a></td>
+                            <td style="padding: 1rem; font-size: 0.9rem; color: #a0a0a0;">Short</td>
+                            <td style="padding: 1rem;">
+                                <span style="font-size: 0.75rem; padding: 0.2rem 0.5rem; background: rgba(16, 185, 129, 0.2); color: #10B981; border-radius: 8px;">Health</span>
+                            </td>
+                            <td style="padding: 1rem; font-size: 0.85rem; color: #10B981;">Health Reset</td>
+                            <td style="padding: 1rem; text-align: center;"><span style="font-size: 0.85rem; padding: 0.25rem 0.75rem; background: rgba(16, 185, 129, 0.2); color: #10B981; border-radius: 12px;">Active</span></td>
+                            <td style="padding: 1rem; text-align: center; font-weight: 700; color: #10B981;">88</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem;"><a href="goal.html" style="color: #8B5CF6; text-decoration: none; font-weight: 600;">Grow net worth to €50k</a></td>
+                            <td style="padding: 1rem; font-size: 0.9rem; color: #a0a0a0;">Long</td>
+                            <td style="padding: 1rem;">
+                                <span style="font-size: 0.75rem; padding: 0.2rem 0.5rem; background: rgba(245, 158, 11, 0.2); color: #F59E0B; border-radius: 8px;">Finance</span>
+                            </td>
+                            <td style="padding: 1rem; font-size: 0.85rem; color: #F59E0B;">Finance Discipline</td>
+                            <td style="padding: 1rem; text-align: center;"><span style="font-size: 0.85rem; padding: 0.25rem 0.75rem; background: rgba(16, 185, 129, 0.2); color: #10B981; border-radius: 12px;">Active</span></td>
+                            <td style="padding: 1rem; text-align: center; font-weight: 700; color: #10B981;">84</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem;"><a href="goal.html" style="color: #8B5CF6; text-decoration: none; font-weight: 600;">Build meaningful friendships</a></td>
+                            <td style="padding: 1rem; font-size: 0.9rem; color: #a0a0a0;">Long</td>
+                            <td style="padding: 1rem;">
+                                <span style="font-size: 0.75rem; padding: 0.2rem 0.5rem; background: rgba(236, 72, 153, 0.2); color: #EC4899; border-radius: 8px;">Social</span>
+                            </td>
+                            <td style="padding: 1rem; font-size: 0.85rem; color: #808080;">—</td>
+                            <td style="padding: 1rem; text-align: center;"><span style="font-size: 0.85rem; padding: 0.25rem 0.75rem; background: rgba(16, 185, 129, 0.2); color: #10B981; border-radius: 12px;">Active</span></td>
+                            <td style="padding: 1rem; text-align: center; font-weight: 700; color: #10B981;">78</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem;"><a href="goal.html" style="color: #8B5CF6; text-decoration: none; font-weight: 600;">Master AI systems engineering</a></td>
+                            <td style="padding: 1rem; font-size: 0.9rem; color: #a0a0a0;">Long</td>
+                            <td style="padding: 1rem;">
+                                <span style="font-size: 0.75rem; padding: 0.2rem 0.5rem; background: rgba(20, 184, 166, 0.2); color: #14B8A6; border-radius: 8px; margin-right: 0.25rem;">Dev</span>
+                                <span style="font-size: 0.75rem; padding: 0.2rem 0.5rem; background: rgba(59, 130, 246, 0.2); color: #3B82F6; border-radius: 8px;">Business</span>
+                            </td>
+                            <td style="padding: 1rem; font-size: 0.85rem; color: #3B82F6;">Launch Sprint</td>
+                            <td style="padding: 1rem; text-align: center;"><span style="font-size: 0.85rem; padding: 0.25rem 0.75rem; background: rgba(16, 185, 129, 0.2); color: #10B981; border-radius: 12px;">Active</span></td>
+                            <td style="padding: 1rem; text-align: center; font-weight: 700; color: #10B981;">76</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem;"><a href="goal.html" style="color: #8B5CF6; text-decoration: none; font-weight: 600;">Stay within monthly budget</a></td>
+                            <td style="padding: 1rem; font-size: 0.9rem; color: #a0a0a0;">Short</td>
+                            <td style="padding: 1rem;">
+                                <span style="font-size: 0.75rem; padding: 0.2rem 0.5rem; background: rgba(245, 158, 11, 0.2); color: #F59E0B; border-radius: 8px;">Finance</span>
+                            </td>
+                            <td style="padding: 1rem; font-size: 0.85rem; color: #F59E0B;">Finance Discipline</td>
+                            <td style="padding: 1rem; text-align: center;"><span style="font-size: 0.85rem; padding: 0.25rem 0.75rem; background: rgba(245, 158, 11, 0.2); color: #F59E0B; border-radius: 12px;">Active</span></td>
+                            <td style="padding: 1rem; text-align: center; font-weight: 700; color: #F59E0B;">68</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem;"><a href="goal.html" style="color: #8B5CF6; text-decoration: none; font-weight: 600;">Travel to 3 new cities</a></td>
+                            <td style="padding: 1rem; font-size: 0.9rem; color: #a0a0a0;">Mid</td>
+                            <td style="padding: 1rem;">
+                                <span style="font-size: 0.75rem; padding: 0.2rem 0.5rem; background: rgba(236, 72, 153, 0.2); color: #EC4899; border-radius: 8px;">Social</span>
+                            </td>
+                            <td style="padding: 1rem; font-size: 0.85rem; color: #808080;">—</td>
+                            <td style="padding: 1rem; text-align: center;"><span style="font-size: 0.85rem; padding: 0.25rem 0.75rem; background: rgba(245, 158, 11, 0.2); color: #F59E0B; border-radius: 12px;">Active</span></td>
+                            <td style="padding: 1rem; text-align: center; font-weight: 700; color: #F59E0B;">65</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem;"><a href="goal.html" style="color: #8B5CF6; text-decoration: none; font-weight: 600;">Read 24 books this year</a></td>
+                            <td style="padding: 1rem; font-size: 0.9rem; color: #a0a0a0;">Long</td>
+                            <td style="padding: 1rem;">
+                                <span style="font-size: 0.75rem; padding: 0.2rem 0.5rem; background: rgba(20, 184, 166, 0.2); color: #14B8A6; border-radius: 8px;">Dev</span>
+                            </td>
+                            <td style="padding: 1rem; font-size: 0.85rem; color: #808080;">—</td>
+                            <td style="padding: 1rem; text-align: center;"><span style="font-size: 0.85rem; padding: 0.25rem 0.75rem; background: rgba(128, 128, 128, 0.2); color: #808080; border-radius: 12px;">Paused</span></td>
+                            <td style="padding: 1rem; text-align: center; font-weight: 700; color: #808080;">52</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- SECTION: Conflicts & Overload -->
+        <section style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: #F59E0B;">Conflicts & Overload</h2>
+
+            <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: rgba(245, 158, 11, 0.05); border-left: 3px solid #F59E0B; border-radius: 8px;">
+                <h3 style="font-size: 1.1rem; color: #F59E0B; margin-bottom: 0.75rem;">Business Sprint conflicts with Health capacity</h3>
+                <p style="color: #a0a0a0; margin-bottom: 0.75rem; font-size: 0.95rem;">
+                    <strong style="color: #e0e0e0;">Trigger:</strong> Launch Sprint demands increased working hours while Health Reset requires consistent training schedule.
+                </p>
+                <p style="color: #a0a0a0; margin-bottom: 0.75rem; font-size: 0.95rem;">
+                    <strong style="color: #e0e0e0;">Evidence:</strong> Last 7 days: avg 11h work/day, missed 2 gym sessions. WHOOP strain dropped to 12.8 (below 15 target).
+                </p>
+                <p style="color: #F59E0B; font-weight: 600; font-size: 0.95rem;">
+                    → Suggested: Extend Launch Sprint by 1 week OR reduce Health Reset intensity to 3x/week training.
+                </p>
+            </div>
+
+            <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: rgba(245, 158, 11, 0.05); border-left: 3px solid #F59E0B; border-radius: 8px;">
+                <h3 style="font-size: 1.1rem; color: #F59E0B; margin-bottom: 0.75rem;">Too many parallel goals in Social + Business</h3>
+                <p style="color: #a0a0a0; margin-bottom: 0.75rem; font-size: 0.95rem;">
+                    <strong style="color: #e0e0e0;">Trigger:</strong> 3 active goals across Social + Business with overlapping time requirements.
+                </p>
+                <p style="color: #a0a0a0; margin-bottom: 0.75rem; font-size: 0.95rem;">
+                    <strong style="color: #e0e0e0;">Evidence:</strong> Last 14 days: Social score declining (-4), Business overload (10+ tasks/day), travel goal stalled at 65% alignment.
+                </p>
+                <p style="color: #F59E0B; font-weight: 600; font-size: 0.95rem;">
+                    → Suggested: Pause "Travel to 3 new cities" until Launch Sprint completes (21 days).
+                </p>
+            </div>
+
+            <div style="padding: 1.5rem; background: rgba(245, 158, 11, 0.05); border-left: 3px solid #F59E0B; border-radius: 8px;">
+                <h3 style="font-size: 1.1rem; color: #F59E0B; margin-bottom: 0.75rem;">Finance goal misaligned with current spending</h3>
+                <p style="color: #a0a0a0; margin-bottom: 0.75rem; font-size: 0.95rem;">
+                    <strong style="color: #e0e0e0;">Trigger:</strong> "Stay within monthly budget" goal shows 68% alignment, below threshold.
+                </p>
+                <p style="color: #a0a0a0; margin-bottom: 0.75rem; font-size: 0.95rem;">
+                    <strong style="color: #e0e0e0;">Evidence:</strong> Current month: €2,680 spent vs €2,340 budget. Over by €340 (14.5%). Restaurant spending +€180 vs last month.
+                </p>
+                <p style="color: #F59E0B; font-weight: 600; font-size: 0.95rem;">
+                    → Suggested: Set hard cap via Revolut spending limit OR reduce restaurant budget by €50/week for next 4 weeks.
+                </p>
+            </div>
+        </section>
+
+        <!-- BOTTOM: Suggested Focus -->
+        <section style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Suggested Focus This Week</h2>
+
+            <div style="background: rgba(139, 92, 246, 0.05); border-radius: 8px; padding: 1.5rem;">
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="padding: 1rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); color: #e0e0e0;">
+                        <span style="color: #8B5CF6; font-weight: 700; margin-right: 0.5rem;">1.</span>
+                        Prioritize Launch Sprint completion — 3 major milestones remain. Capacity: allocate 8h/day for next 7 days.
+                    </li>
+                    <li style="padding: 1rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); color: #e0e0e0;">
+                        <span style="color: #8B5CF6; font-weight: 700; margin-right: 0.5rem;">2.</span>
+                        Protect Health Reset training — maintain 3x gym sessions minimum. Schedule Mon/Wed/Fri 7am to avoid Business conflicts.
+                    </li>
+                    <li style="padding: 1rem 0; color: #e0e0e0;">
+                        <span style="color: #8B5CF6; font-weight: 700; margin-right: 0.5rem;">3.</span>
+                        Pause Social travel goal temporarily — defer "Travel to 3 new cities" by 21 days to reduce overload. Resume after Launch Sprint.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

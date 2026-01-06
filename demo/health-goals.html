@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Goals - My42</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/demo.css">
+</head>
+<body>
+    <div class="cosmic-bg"></div>
+
+    <!-- App Header -->
+    <header class="app-header">
+        <div class="app-header-container">
+            <a href="../index.html" class="app-header-logo">my42</a>
+
+            <div class="app-header-nav-container">
+                <a href="life.html" class="app-header-link">Life</a>
+                <a href="goals.html" class="app-header-link">Goals</a>
+                <a href="sprints.html" class="app-header-link">Sprints</a>
+            </div>
+
+            <div class="app-header-right">
+                <button class="app-header-menu-toggle">Menu</button>
+                <a href="settings.html" class="app-header-settings">Settings</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container" style="margin-top: 7rem; max-width: 900px;">
+
+        <!-- Header with mini dashboard -->
+        <section style="margin-bottom: 3rem; text-align: center;">
+            <h1 style="font-size: 2rem; margin-bottom: 1rem;">Health Goals & Actions</h1>
+
+            <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin-bottom: 2rem;">
+                <!-- Mini score ring -->
+                <svg width="80" height="80" viewBox="0 0 80 80">
+                    <defs>
+                        <linearGradient id="miniHealthGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#14B8A6;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="40" cy="40" r="30" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="6"/>
+                    <circle cx="40" cy="40" r="30" fill="none"
+                            stroke="url(#miniHealthGradient)"
+                            stroke-width="6"
+                            stroke-dasharray="188.5"
+                            stroke-dashoffset="24.5"
+                            stroke-linecap="round"
+                            transform="rotate(-90 40 40)"/>
+                    <text x="40" y="45" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="900">87</text>
+                </svg>
+
+                <!-- Mini trend -->
+                <div>
+                    <p style="font-size: 0.85rem; color: #808080; margin-bottom: 0.5rem;">Goals Score</p>
+                    <p style="font-size: 1.5rem; font-weight: 700; color: #10B981; margin: 0;">92/100</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Goals Score Breakdown -->
+        <section style="margin-bottom: 3rem; padding: 1.5rem; background: rgba(16, 185, 129, 0.05); border-radius: 8px;">
+            <h3 style="font-size: 1.1rem; margin-bottom: 1rem; color: #10B981;">Goals Score: 92/100</h3>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; font-size: 0.9rem;">
+                <div>
+                    <p style="color: #808080; margin-bottom: 0.25rem;">Task Completion</p>
+                    <p style="color: #e0e0e0; font-weight: 600;">91% (36.4/40)</p>
+                </div>
+                <div>
+                    <p style="color: #808080; margin-bottom: 0.25rem;">Goal Progress</p>
+                    <p style="color: #e0e0e0; font-weight: 600;">88% (26.4/30)</p>
+                </div>
+                <div>
+                    <p style="color: #808080; margin-bottom: 0.25rem;">Alignment</p>
+                    <p style="color: #e0e0e0; font-weight: 600;">96% (28.8/30)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Active Goals -->
+        <section style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Active Goals (4)</h2>
+
+            <!-- Goal 1 -->
+            <div style="margin-bottom: 2rem; padding: 1.5rem; background: rgba(255,255,255,0.02); border-left: 3px solid #10B981; border-radius: 8px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                    <h3 style="font-size: 1.2rem; color: #10B981; margin: 0;">Run 100km this month</h3>
+                    <span style="font-size: 0.85rem; color: #10B981; background: rgba(16, 185, 129, 0.2); padding: 0.25rem 0.75rem; border-radius: 12px;">On Track</span>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <span style="font-size: 0.9rem; color: #808080;">Progress</span>
+                        <span style="font-size: 0.9rem; color: #e0e0e0; font-weight: 600;">68/100 km</span>
+                    </div>
+                    <div style="width: 100%; height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden;">
+                        <div style="width: 68%; height: 100%; background: linear-gradient(90deg, #10B981, #14B8A6); border-radius: 4px;"></div>
+                    </div>
+                </div>
+
+                <p style="font-size: 0.9rem; color: #a0a0a0; margin-bottom: 1rem;">Last update: 6 hours ago (Morning run: 8.2km)</p>
+
+                <h4 style="font-size: 0.95rem; color: #e0e0e0; margin-bottom: 0.75rem;">Linked Tasks (3):</h4>
+                <div class="task-list">
+                    <div class="task-row">
+                        <input type="checkbox" checked>
+                        <span class="task-text" style="text-decoration: line-through; opacity: 0.5;">Morning run - 45min</span>
+                        <span class="task-tag task-tag-health">Daily</span>
+                    </div>
+                    <div class="task-row">
+                        <input type="checkbox">
+                        <span class="task-text">Weekend long run - 15km</span>
+                        <span class="task-tag task-tag-health">Weekly</span>
+                    </div>
+                    <div class="task-row">
+                        <input type="checkbox">
+                        <span class="task-text">Track run in Strava</span>
+                        <span class="task-tag task-tag-health">Daily</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Goal 2 -->
+            <div style="margin-bottom: 2rem; padding: 1.5rem; background: rgba(255,255,255,0.02); border-left: 3px solid #10B981; border-radius: 8px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                    <h3 style="font-size: 1.2rem; color: #10B981; margin: 0;">Sleep 8h average</h3>
+                    <span style="font-size: 0.85rem; color: #F59E0B; background: rgba(245, 158, 11, 0.2); padding: 0.25rem 0.75rem; border-radius: 12px;">Needs Attention</span>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <span style="font-size: 0.9rem; color: #808080;">Current Average</span>
+                        <span style="font-size: 0.9rem; color: #e0e0e0; font-weight: 600;">7.6h / 8.0h</span>
+                    </div>
+                    <div style="width: 100%; height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden;">
+                        <div style="width: 95%; height: 100%; background: linear-gradient(90deg, #F59E0B, #FBBF24); border-radius: 4px;"></div>
+                    </div>
+                </div>
+
+                <p style="font-size: 0.9rem; color: #a0a0a0; margin-bottom: 1rem;">Last update: 8 hours ago (Sleep: 7.2h)</p>
+
+                <h4 style="font-size: 0.95rem; color: #e0e0e0; margin-bottom: 0.75rem;">Linked Tasks (2):</h4>
+                <div class="task-list">
+                    <div class="task-row">
+                        <input type="checkbox">
+                        <span class="task-text">In bed by 10pm</span>
+                        <span class="task-tag task-tag-health">Daily</span>
+                    </div>
+                    <div class="task-row">
+                        <input type="checkbox">
+                        <span class="task-text">Track sleep in WHOOP</span>
+                        <span class="task-tag task-tag-health">Auto</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Goal 3 -->
+            <div style="margin-bottom: 2rem; padding: 1.5rem; background: rgba(255,255,255,0.02); border-left: 3px solid #10B981; border-radius: 8px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                    <h3 style="font-size: 1.2rem; color: #10B981; margin: 0;">Maintain 15+ strain/day</h3>
+                    <span style="font-size: 0.85rem; color: #10B981; background: rgba(16, 185, 129, 0.2); padding: 0.25rem 0.75rem; border-radius: 12px;">On Track</span>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <span style="font-size: 0.9rem; color: #808080;">7-Day Average</span>
+                        <span style="font-size: 0.9rem; color: #e0e0e0; font-weight: 600;">16.2 / 15.0</span>
+                    </div>
+                    <div style="width: 100%; height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden;">
+                        <div style="width: 100%; height: 100%; background: linear-gradient(90deg, #10B981, #14B8A6); border-radius: 4px;"></div>
+                    </div>
+                </div>
+
+                <p style="font-size: 0.9rem; color: #a0a0a0; margin-bottom: 1rem;">Last update: 2 hours ago (Today: 14.2)</p>
+
+                <h4 style="font-size: 0.95rem; color: #e0e0e0; margin-bottom: 0.75rem;">Linked Tasks (2):</h4>
+                <div class="task-list">
+                    <div class="task-row">
+                        <input type="checkbox" checked>
+                        <span class="task-text" style="text-decoration: line-through; opacity: 0.5;">Morning workout - high intensity</span>
+                        <span class="task-tag task-tag-health">Daily</span>
+                    </div>
+                    <div class="task-row">
+                        <input type="checkbox">
+                        <span class="task-text">Evening activity (walk/bike)</span>
+                        <span class="task-tag task-tag-health">Optional</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Goal 4 -->
+            <div style="margin-bottom: 2rem; padding: 1.5rem; background: rgba(255,255,255,0.02); border-left: 3px solid #10B981; border-radius: 8px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                    <h3 style="font-size: 1.2rem; color: #10B981; margin: 0;">Track nutrition daily</h3>
+                    <span style="font-size: 0.85rem; color: #10B981; background: rgba(16, 185, 129, 0.2); padding: 0.25rem 0.75rem; border-radius: 12px;">On Track</span>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <span style="font-size: 0.9rem; color: #808080;">Tracking Rate</span>
+                        <span style="font-size: 0.9rem; color: #e0e0e0; font-weight: 600;">21/30 days</span>
+                    </div>
+                    <div style="width: 100%; height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden;">
+                        <div style="width: 70%; height: 100%; background: linear-gradient(90deg, #10B981, #14B8A6); border-radius: 4px;"></div>
+                    </div>
+                </div>
+
+                <p style="font-size: 0.9rem; color: #a0a0a0; margin-bottom: 1rem;">Last update: 3 hours ago (Lunch logged)</p>
+
+                <h4 style="font-size: 0.95rem; color: #e0e0e0; margin-bottom: 0.75rem;">Linked Tasks (3):</h4>
+                <div class="task-list">
+                    <div class="task-row">
+                        <input type="checkbox" checked>
+                        <span class="task-text" style="text-decoration: line-through; opacity: 0.5;">Log breakfast in Cal AI</span>
+                        <span class="task-tag task-tag-health">Daily</span>
+                    </div>
+                    <div class="task-row">
+                        <input type="checkbox">
+                        <span class="task-text">Log lunch in Cal AI</span>
+                        <span class="task-tag task-tag-health">Daily</span>
+                    </div>
+                    <div class="task-row">
+                        <input type="checkbox">
+                        <span class="task-text">Log dinner in Cal AI</span>
+                        <span class="task-tag task-tag-health">Daily</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div style="text-align: center; padding: 2rem 0;">
+            <a href="health.html" style="text-decoration: none; color: #10B981; font-weight: 600;">← Back to Health Sphere</a>
+        </div>
+
+    </div>
+</body>
+</html>
