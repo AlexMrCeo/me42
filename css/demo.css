@@ -1,0 +1,233 @@
+/* ============================================
+   MY42 - DEMO PAGE STYLES
+   Specific styles for demo/goals.html
+   ============================================ */
+
+/* Demo-specific enhancements for goal cards */
+.demo-goal-card {
+    transition: all 0.3s ease;
+}
+
+.demo-goal-card:hover {
+    transform: scale(1.02);
+}
+
+/* Interactive task checkboxes */
+.task-checkbox {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.task-checkbox:hover {
+    transform: scale(1.1);
+}
+
+/* Progress bar animations */
+@keyframes progress-fill {
+    from {
+        width: 0%;
+    }
+}
+
+.progress-bar {
+    animation: progress-fill 1s ease-out;
+}
+
+/* Demo stats counter animation */
+@keyframes count-up {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.stat-number {
+    animation: count-up 0.6s ease-out;
+}
+
+/* Status badges */
+.status-on-track {
+    color: #10B981;
+    font-weight: 600;
+}
+
+.status-stalled {
+    color: #F59E0B;
+    font-weight: 600;
+}
+
+.status-ahead {
+    color: #14B8A6;
+    font-weight: 600;
+}
+
+.status-behind {
+    color: #EF4444;
+    font-weight: 600;
+}
+
+/* Responsive adjustments for demo */
+@media (max-width: 768px) {
+    .demo-goal-card {
+        padding: 1rem;
+    }
+}
+
+/* ============================================
+   LIFE OVERVIEW DASHBOARD STYLES
+   For demo/life.html
+   ============================================ */
+
+/* Sphere indicator with hover tooltip */
+.sphere-indicator {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.sphere-tooltip {
+    position: absolute;
+    display: none;
+    background: rgba(0, 0, 0, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 1rem;
+    min-width: 200px;
+    z-index: 10;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0.5rem;
+}
+
+.sphere-tooltip::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+.sphere-indicator:hover .sphere-tooltip {
+    display: block;
+}
+
+.sphere-tooltip p {
+    margin: 0 0 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.sphere-tooltip ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    font-size: 0.85rem;
+    color: #a0a0a0;
+}
+
+.sphere-tooltip li {
+    margin: 0.25rem 0;
+}
+
+/* Task list styles */
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.task-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 6px;
+    transition: background 0.2s ease;
+}
+
+.task-row:hover {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.task-row input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.task-text {
+    flex: 1;
+    font-size: 0.95rem;
+    color: #e0e0e0;
+}
+
+.task-tag {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.task-tag-health {
+    background: rgba(16, 185, 129, 0.2);
+    color: #10B981;
+}
+
+.task-tag-finance {
+    background: rgba(245, 158, 11, 0.2);
+    color: #F59E0B;
+}
+
+.task-tag-development {
+    background: rgba(20, 184, 166, 0.2);
+    color: #14B8A6;
+}
+
+.task-tag-social {
+    background: rgba(236, 72, 153, 0.2);
+    color: #EC4899;
+}
+
+.task-tag-business {
+    background: rgba(59, 130, 246, 0.2);
+    color: #3B82F6;
+}
+
+.task-time {
+    font-size: 0.8rem;
+    color: #606060;
+    min-width: 3rem;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+/* Responsive adjustments for Life Overview */
+@media (max-width: 768px) {
+    .sphere-tooltip {
+        min-width: 180px;
+        font-size: 0.85rem;
+    }
+
+    .task-row {
+        padding: 0.4rem 0.6rem;
+    }
+
+    .task-text {
+        font-size: 0.9rem;
+    }
+
+    .task-tag {
+        font-size: 0.65rem;
+    }
+}

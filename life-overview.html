@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Overview - My42</title>
+    <meta name="description" content="Your complete life dashboard. One score. Five spheres. Complete visibility.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <div class="cosmic-bg"></div>
+    <div class="stars" id="stars"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">my42</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="spheres.html" class="nav-link">Spheres</a></li>
+                <li><a href="life-score.html" class="nav-link">Life Score</a></li>
+                <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+            </ul>
+            <a href="index.html#waitlist" class="nav-cta">Join Waitlist</a>
+            <button class="nav-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Life Score Header -->
+    <section class="section" style="padding-top: 4rem; padding-bottom: 2rem;">
+        <div class="container">
+            <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+                <p class="text-muted" style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1rem;">Life Overview</p>
+
+                <!-- Life Score Display -->
+                <div style="margin-bottom: 2rem;">
+                    <div style="font-size: 7rem; font-weight: 900; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1; margin-bottom: 0.5rem;">
+                        79
+                    </div>
+                    <p style="font-size: 1.2rem; color: #a0a0a0; margin-bottom: 0.5rem;">Your Life Score</p>
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                        <span style="color: #10B981; font-size: 1.5rem;">▲</span>
+                        <span style="color: #10B981; font-weight: 600;">+3 this week</span>
+                    </div>
+                </div>
+
+                <p class="text-light" style="font-size: 1rem; font-style: italic;">
+                    "Strong business momentum. Health trending up. Social sphere needs attention."
+                </p>
+                <p class="text-muted" style="font-size: 0.9rem; margin-top: 0.5rem;">— Oracle</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sphere Scores Grid -->
+    <section class="section" style="padding-top: 2rem; padding-bottom: 3rem;">
+        <div class="container">
+            <div style="max-width: 1000px; margin: 0 auto;">
+                <h3 class="text-center mb-lg" style="color: #a0a0a0; font-size: 1.2rem; font-weight: 600;">Sphere Breakdown</h3>
+
+                <div class="grid grid-2" style="gap: 1.5rem;">
+                    <!-- Health Sphere -->
+                    <a href="health.html" class="card card-health" style="text-decoration: none; color: inherit; cursor: pointer; position: relative;">
+                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1.5rem;">
+                            <div>
+                                <div style="font-size: 2rem; margin-bottom: 0.5rem;">🏃</div>
+                                <h3 style="color: #10B981; margin: 0;">Health</h3>
+                                <p style="color: #808080; margin: 0; font-size: 0.9rem;">Agent: Vita</p>
+                            </div>
+                            <div style="text-align: right;">
+                                <div style="font-size: 2.5rem; font-weight: 900; color: #10B981; line-height: 1;">87</div>
+                                <div style="color: #10B981; font-size: 1.2rem; margin-top: 0.25rem;">▲</div>
+                            </div>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.05); height: 6px; border-radius: 3px; overflow: hidden; margin-bottom: 1rem;">
+                            <div style="background: linear-gradient(90deg, #10B981, #14B8A6); height: 100%; width: 87%;"></div>
+                        </div>
+                        <p class="text-light" style="font-size: 0.9rem;">12-day workout streak. Recovery at 89%. Sleep quality excellent.</p>
+                    </a>
+
+                    <!-- Finance Sphere -->
+                    <a href="finance.html" class="card card-finance" style="text-decoration: none; color: inherit; cursor: pointer; position: relative;">
+                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1.5rem;">
+                            <div>
+                                <div style="font-size: 2rem; margin-bottom: 0.5rem;">💰</div>
+                                <h3 style="color: #F59E0B; margin: 0;">Finance</h3>
+                                <p style="color: #808080; margin: 0; font-size: 0.9rem;">Agent: Argentum</p>
+                            </div>
+                            <div style="text-align: right;">
+                                <div style="font-size: 2.5rem; font-weight: 900; color: #F59E0B; line-height: 1;">72</div>
+                                <div style="color: #808080; font-size: 1.2rem; margin-top: 0.25rem;">—</div>
+                            </div>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.05); height: 6px; border-radius: 3px; overflow: hidden; margin-bottom: 1rem;">
+                            <div style="background: linear-gradient(90deg, #F59E0B, #EF4444); height: 100%; width: 72%;"></div>
+                        </div>
+                        <p class="text-light" style="font-size: 0.9rem;">Income stable. Spending +€120 over budget. Investment portfolio flat.</p>
+                    </a>
+
+                    <!-- Development Sphere -->
+                    <a href="#" class="card card-development" style="text-decoration: none; color: inherit; cursor: pointer; position: relative; opacity: 0.95;">
+                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1.5rem;">
+                            <div>
+                                <div style="font-size: 2rem; margin-bottom: 0.5rem;">📚</div>
+                                <h3 style="color: #14B8A6; margin: 0;">Development</h3>
+                                <p style="color: #808080; margin: 0; font-size: 0.9rem;">Agent: Sage</p>
+                            </div>
+                            <div style="text-align: right;">
+                                <div style="font-size: 2.5rem; font-weight: 900; color: #14B8A6; line-height: 1;">78</div>
+                                <div style="color: #10B981; font-size: 1.2rem; margin-top: 0.25rem;">▲</div>
+                            </div>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.05); height: 6px; border-radius: 3px; overflow: hidden; margin-bottom: 1rem;">
+                            <div style="background: linear-gradient(90deg, #14B8A6, #10B981); height: 100%; width: 78%;"></div>
+                        </div>
+                        <p class="text-light" style="font-size: 0.9rem;">Reading pace on target. 2 courses in progress. 4-week learning streak.</p>
+                    </a>
+
+                    <!-- Social Sphere -->
+                    <a href="#" class="card card-social" style="text-decoration: none; color: inherit; cursor: pointer; position: relative; opacity: 0.95;">
+                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1.5rem;">
+                            <div>
+                                <div style="font-size: 2rem; margin-bottom: 0.5rem;">👥</div>
+                                <h3 style="color: #EC4899; margin: 0;">Social</h3>
+                                <p style="color: #808080; margin: 0; font-size: 0.9rem;">Agent: Nexus</p>
+                            </div>
+                            <div style="text-align: right;">
+                                <div style="font-size: 2.5rem; font-weight: 900; color: #EC4899; line-height: 1;">65</div>
+                                <div style="color: #EF4444; font-size: 1.2rem; margin-top: 0.25rem;">▼</div>
+                            </div>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.05); height: 6px; border-radius: 3px; overflow: hidden; margin-bottom: 1rem;">
+                            <div style="background: linear-gradient(90deg, #EC4899, #EF4444); height: 100%; width: 65%;"></div>
+                        </div>
+                        <p class="text-light" style="font-size: 0.9rem;">4 days at home. Last social event: 6 days ago. Contact friends.</p>
+                    </a>
+
+                    <!-- Business Sphere -->
+                    <a href="#" class="card card-business" style="text-decoration: none; color: inherit; cursor: pointer; position: relative; opacity: 0.95; grid-column: span 2;">
+                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1.5rem;">
+                            <div>
+                                <div style="font-size: 2rem; margin-bottom: 0.5rem;">💼</div>
+                                <h3 style="color: #3B82F6; margin: 0;">Business</h3>
+                                <p style="color: #808080; margin: 0; font-size: 0.9rem;">Agent: Forge</p>
+                            </div>
+                            <div style="text-align: right;">
+                                <div style="font-size: 2.5rem; font-weight: 900; color: #3B82F6; line-height: 1;">91</div>
+                                <div style="color: #10B981; font-size: 1.2rem; margin-top: 0.25rem;">▲</div>
+                            </div>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.05); height: 6px; border-radius: 3px; overflow: hidden; margin-bottom: 1rem;">
+                            <div style="background: linear-gradient(90deg, #3B82F6, #667eea); height: 100%; width: 91%;"></div>
+                        </div>
+                        <p class="text-light" style="font-size: 0.9rem;">Revenue at $9,200/month (+23%). My42 launch on track. YouTube growth accelerating.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Insights -->
+    <section class="section" style="background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px); padding-top: 3rem; padding-bottom: 3rem;">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto;">
+                <h3 class="text-center mb-lg" style="color: #a0a0a0; font-size: 1.2rem; font-weight: 600;">Today's Insights</h3>
+
+                <div class="grid grid-2" style="gap: 1.5rem;">
+                    <!-- Insight 1 -->
+                    <div class="card" style="border-left: 3px solid #EC4899;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+                            <span style="font-size: 1.5rem;">👥</span>
+                            <div>
+                                <p style="font-weight: 600; margin: 0; color: #EC4899;">Nexus Alert</p>
+                                <p style="font-size: 0.85rem; color: #808080; margin: 0;">Social Sphere</p>
+                            </div>
+                        </div>
+                        <p class="text-light" style="font-size: 0.95rem; line-height: 1.6;">
+                            "4 consecutive days at home. Social score declining. Schedule dinner with friends this week or accept isolation consequences."
+                        </p>
+                        <p class="text-muted" style="font-size: 0.85rem; margin-top: 1rem;">Impact: -2 Life Score if ignored</p>
+                    </div>
+
+                    <!-- Insight 2 -->
+                    <div class="card" style="border-left: 3px solid #667eea;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+                            <span style="font-size: 1.5rem;">👁️</span>
+                            <div>
+                                <p style="font-weight: 600; margin: 0; color: #667eea;">Oracle Discovery</p>
+                                <p style="font-size: 0.85rem; color: #808080; margin: 0;">Cross-Sphere Correlation</p>
+                            </div>
+                        </div>
+                        <p class="text-light" style="font-size: 0.95rem; line-height: 1.6;">
+                            "Correlation detected: Gym sessions (+12 day streak) → Business productivity (+35%). Maintain health momentum for continued business gains."
+                        </p>
+                        <p class="text-muted" style="font-size: 0.85rem; margin-top: 1rem;">Confidence: 89%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Actions -->
+    <section class="section" style="padding-top: 2rem; padding-bottom: 4rem;">
+        <div class="container">
+            <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+                <h3 class="mb-md" style="color: #a0a0a0; font-size: 1.2rem; font-weight: 600;">Quick Actions</h3>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="demo/goals.html" class="btn btn-primary">View Goals & Tasks</a>
+                    <a href="spheres.html" class="btn btn-secondary">Explore Spheres</a>
+                    <a href="#" class="btn btn-secondary" style="opacity: 0.7; cursor: not-allowed;">Evening Review</a>
+                </div>
+                <p class="text-muted" style="margin-top: 1.5rem; font-size: 0.9rem;">
+                    Last updated: Just now · Next insight check: 2h
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p class="footer-tagline">Don't Panic</p>
+            <p class="footer-text">
+                My42 - The Life Operating System. Coming soon.
+            </p>
+            <div class="footer-links">
+                <a href="mailto:hello@my42.xyz" class="footer-link">Email</a>
+                <a href="https://twitter.com/my42" class="footer-link" target="_blank">Twitter</a>
+                <a href="https://t.me/my42" class="footer-link" target="_blank">Telegram</a>
+            </div>
+            <p class="copyright">
+                © 2026 My42. The answer to everything.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Generate stars
+        function createStars() {
+            const starsContainer = document.getElementById('stars');
+            const numberOfStars = 100;
+
+            for (let i = 0; i < numberOfStars; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.animationDelay = Math.random() * 3 + 's';
+                starsContainer.appendChild(star);
+            }
+        }
+
+        window.addEventListener('load', createStars);
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Disable non-functional sphere links with message
+        document.querySelectorAll('a[href="#"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                if (this.querySelector('h3')) {
+                    e.preventDefault();
+                    const sphereName = this.querySelector('h3').textContent;
+                    console.log(`${sphereName} detail page coming soon`);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

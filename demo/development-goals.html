@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Development Goals - My42</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/demo.css">
+</head>
+<body>
+    <div class="cosmic-bg"></div>
+
+    <nav class="nav">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="development.html" style="text-decoration: none; color: #14B8A6; font-weight: 600;">← Development Sphere</a>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 6rem; max-width: 900px;">
+
+        <!-- Header with mini dashboard -->
+        <section style="margin-bottom: 3rem; text-align: center;">
+            <h1 style="font-size: 2rem; margin-bottom: 1rem;">Development Goals & Actions</h1>
+
+            <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin-bottom: 2rem;">
+                <!-- Mini score ring -->
+                <svg width="80" height="80" viewBox="0 0 80 80">
+                    <defs>
+                        <linearGradient id="miniDevGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#14B8A6;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="40" cy="40" r="30" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="6"/>
+                    <circle cx="40" cy="40" r="30" fill="none"
+                            stroke="url(#miniDevGradient)"
+                            stroke-width="6"
+                            stroke-dasharray="188.5"
+                            stroke-dashoffset="41.8"
+                            stroke-linecap="round"
+                            transform="rotate(-90 40 40)"/>
+                    <text x="40" y="45" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="900">78</text>
+                </svg>
+
+                <!-- Mini trend -->
+                <div>
+                    <p style="font-size: 0.85rem; color: #808080; margin-bottom: 0.5rem;">Goals Score</p>
+                    <p style="font-size: 1.5rem; font-weight: 700; color: #14B8A6; margin: 0;">75/100</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Goals Score Breakdown -->
+        <section style="margin-bottom: 3rem; padding: 1.5rem; background: rgba(20, 184, 166, 0.05); border-radius: 8px;">
+            <h3 style="font-size: 1.1rem; margin-bottom: 1rem; color: #14B8A6;">Goals Score: 75/100</h3>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; font-size: 0.9rem;">
+                <div>
+                    <p style="color: #808080; margin-bottom: 0.25rem;">Task Completion</p>
+                    <p style="color: #e0e0e0; font-weight: 600;">72% (28.8/40)</p>
+                </div>
+                <div>
+                    <p style="color: #808080; margin-bottom: 0.25rem;">Goal Progress</p>
+                    <p style="color: #e0e0e0; font-weight: 600;">75% (22.5/30)</p>
+                </div>
+                <div>
+                    <p style="color: #808080; margin-bottom: 0.25rem;">Alignment</p>
+                    <p style="color: #e0e0e0; font-weight: 600;">78% (23.4/30)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Active Goals -->
+        <section style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Active Goals (5)</h2>
+
+            <!-- Goal 1 -->
+            <div style="margin-bottom: 2rem; padding: 1.5rem; background: rgba(255,255,255,0.02); border-left: 3px solid #14B8A6; border-radius: 8px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                    <h3 style="font-size: 1.2rem; color: #14B8A6; margin: 0;">Complete 25h learning per month</h3>
+                    <span style="font-size: 0.85rem; color: #10B981; background: rgba(16, 185, 129, 0.2); padding: 0.25rem 0.75rem; border-radius: 12px;">On Track</span>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <span style="font-size: 0.9rem; color: #808080;">Hours Completed</span>
+                        <span style="font-size: 0.9rem; color: #e0e0e0; font-weight: 600;">18 / 25h</span>
+                    </div>
+                    <div style="width: 100%; height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden;">
+                        <div style="width: 72%; height: 100%; background: linear-gradient(90deg, #14B8A6, #06B6D4); border-radius: 4px;"></div>
+                    </div>
+                </div>
+
+                <p style="font-size: 0.9rem; color: #a0a0a0; margin-bottom: 1rem;">Last update: 2 days ago (Courses: 12h, Reading: 6h)</p>
+
+                <h4 style="font-size: 0.95rem; color: #e0e0e0; margin-bottom: 0.75rem;">Linked Tasks (3):</h4>
+                <div class="task-list">
+                    <div class="task-row">
+                        <input type="checkbox" checked>
+                        <span class="task-text" style="text-decoration: line-through; opacity: 0.5;">Complete AI/ML course module 3</span>
+                        <span class="task-tag task-tag-development">Weekly</span>
+                    </div>
+                    <div class="task-row">
+                        <input type="checkbox">
+                        <span class="task-text">Reading - 30min daily</span>
+                        <span class="task-tag task-tag-development">Daily</span>
+                    </div>
+                    <div class="task-row">
+                        <input type="checkbox">
+                        <span class="task-text">Systems thinking workshop (2h)</span>
+                        <span class="task-tag task-tag-development">Weekly</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Goal 2 -->
+            <div style="margin-bottom: 2rem; padding: 1.5rem; background: rgba(255,255,255,0.02); border-left: 3px solid #14B8A6; border-radius: 8px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                    <h3 style="font-size: 1.2rem; color: #14B8A6; margin: 0;">Read 3 books per month</h3>
+                    <span style="font-size: 0.85rem; color: #F59E0B; background: rgba(245, 158, 11, 0.2); padding: 0.25rem 0.75rem; border-radius: 12px;">Needs Attention</span>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <span style="font-size: 0.9rem; color: #808080;">Books Completed</span>
+                        <span style="font-size: 0.9rem; color: #e0e0e0; font-weight: 600;">2.3 / 3.0</span>
+                    </div>
+                    <div style="width: 100%; height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden;">
+                        <div style="width: 77%; height: 100%; background: linear-gradient(90deg, #F59E0B, #FBBF24); border-radius: 4px;"></div>
+                    </div>
+                </div>
+
+                <p style="font-size: 0.9rem; color: #a0a0a0; margin-bottom: 1rem;">Last update: Today (Reading: "Thinking in Systems", 68% complete)</p>
+
+                <h4 style="font-size: 0.95rem; color: #e0e0e0; margin-bottom: 0.75rem;">Linked Tasks (2):</h4>
+                <div class="task-list">
+                    <div class="task-row">
+                        <input type="checkbox">
+                        <span class="task-text">Reading - 30min</span>
+                        <span class="task-tag task-tag-development">Daily</span>
+                    </div>
+                    <div class="task-row">
+                        <input type="checkbox">
+                        <span class="task-text">Finish "Thinking in Systems"</span>
+                        <span class="task-tag task-tag-development">This Week</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Goal 3 -->
+            <div style="margin-bottom: 2rem; padding: 1.5rem; background: rgba(255,255,255,0.02); border-left: 3px solid #14B8A6; border-radius: 8px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                    <h3 style="font-size: 1.2rem; color: #14B8A6; margin: 0;">Master AI/ML fundamentals</h3>
+                    <span style="font-size: 0.85rem; color: #10B981; background: rgba(16, 185, 129, 0.2); padding: 0.25rem 0.75rem; border-radius: 12px;">On Track</span>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <span style="font-size: 0.9rem; color: #808080;">Course Progress</span>
+                        <span style="font-size: 0.9rem; color: #e0e0e0; font-weight: 600;">45% (9/20 modules)</span>
+                    </div>
+                    <div style="width: 100%; height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden;">
+                        <div style="width: 45%; height: 100%; background: linear-gradient(90deg, #14B8A6, #06B6D4); border-radius: 4px;"></div>
+                    </div>
+                </div>
+
+                <p style="font-size: 0.9rem; color: #a0a0a0; margin-bottom: 1rem;">Last update: 2 hours ago (Module 3 complete)</p>
+
+                <h4 style="font-size: 0.95rem; color: #e0e0e0; margin-bottom: 0.75rem;">Linked Tasks (2):</h4>
+                <div class="task-list">
+                    <div class="task-row">
+                        <input type="checkbox" checked>
+                        <span class="task-text" style="text-decoration: line-through; opacity: 0.5;">Complete module 3 assignment</span>
+                        <span class="task-tag task-tag-development">This Week</span>
+                    </div>
+                    <div class="task-row">
+                        <input type="checkbox">
+                        <span class="task-text">Start module 4 (Neural Networks)</span>
+                        <span class="task-tag task-tag-development">Next Week</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Goal 4 -->
+            <div style="margin-bottom: 2rem; padding: 1.5rem; background: rgba(255,255,255,0.02); border-left: 3px solid #14B8A6; border-radius: 8px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                    <h3 style="font-size: 1.2rem; color: #14B8A6; margin: 0;">Develop product strategy skills</h3>
+                    <span style="font-size: 0.85rem; color: #10B981; background: rgba(16, 185, 129, 0.2); padding: 0.25rem 0.75rem; border-radius: 12px;">On Track</span>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <span style="font-size: 0.9rem; color: #808080;">Portfolio Projects</span>
+                        <span style="font-size: 0.9rem; color: #e0e0e0; font-weight: 600;">1 / 3</span>
+                    </div>
+                    <div style="width: 100%; height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden;">
+                        <div style="width: 33%; height: 100%; background: linear-gradient(90deg, #14B8A6, #06B6D4); border-radius: 4px;"></div>
+                    </div>
+                </div>
+
+                <p style="font-size: 0.9rem; color: #a0a0a0; margin-bottom: 1rem;">Last update: 1 week ago (Project 1: User research & validation)</p>
+
+                <h4 style="font-size: 0.95rem; color: #e0e0e0; margin-bottom: 0.75rem;">Linked Tasks (2):</h4>
+                <div class="task-list">
+                    <div class="task-row">
+                        <input type="checkbox">
+                        <span class="task-text">Conduct user interviews (3 sessions)</span>
+                        <span class="task-tag task-tag-development">This Month</span>
+                    </div>
+                    <div class="task-row">
+                        <input type="checkbox">
+                        <span class="task-text">Document feature prioritization framework</span>
+                        <span class="task-tag task-tag-development">Next Week</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Goal 5 -->
+            <div style="margin-bottom: 2rem; padding: 1.5rem; background: rgba(255,255,255,0.02); border-left: 3px solid #14B8A6; border-radius: 8px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                    <h3 style="font-size: 1.2rem; color: #14B8A6; margin: 0;">Improve writing clarity</h3>
+                    <span style="font-size: 0.85rem; color: #10B981; background: rgba(16, 185, 129, 0.2); padding: 0.25rem 0.75rem; border-radius: 12px;">On Track</span>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <span style="font-size: 0.9rem; color: #808080;">Articles Published</span>
+                        <span style="font-size: 0.9rem; color: #e0e0e0; font-weight: 600;">4 / 12</span>
+                    </div>
+                    <div style="width: 100%; height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden;">
+                        <div style="width: 33%; height: 100%; background: linear-gradient(90deg, #14B8A6, #06B6D4); border-radius: 4px;"></div>
+                    </div>
+                </div>
+
+                <p style="font-size: 0.9rem; color: #a0a0a0; margin-bottom: 1rem;">Last update: 3 days ago (Article: "Systems thinking for product")</p>
+
+                <h4 style="font-size: 0.95rem; color: #e0e0e0; margin-bottom: 0.75rem;">Linked Tasks (2):</h4>
+                <div class="task-list">
+                    <div class="task-row">
+                        <input type="checkbox">
+                        <span class="task-text">Write weekly article (500+ words)</span>
+                        <span class="task-tag task-tag-development">Weekly</span>
+                    </div>
+                    <div class="task-row">
+                        <input type="checkbox">
+                        <span class="task-text">Edit previous article for clarity</span>
+                        <span class="task-tag task-tag-development">Bi-weekly</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div style="text-align: center; padding: 2rem 0;">
+            <a href="development.html" style="text-decoration: none; color: #14B8A6; font-weight: 600;">← Back to Development Sphere</a>
+        </div>
+
+    </div>
+</body>
+</html>

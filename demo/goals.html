@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goals Demo - My42</title>
+    <meta name="description" content="Experience the Goals Sphere. See how Apex tracks your 56 goals, manages daily tasks, and ensures completion.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/demo.css">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+<body>
+    <div class="cosmic-bg"></div>
+    <div class="stars" id="stars"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">my42</a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../spheres.html" class="nav-link">Spheres</a></li>
+                <li><a href="../life-score.html" class="nav-link">Life Score</a></li>
+                <li><a href="../how-it-works.html" class="nav-link">How It Works</a></li>
+                <li><a href="../pricing.html" class="nav-link">Pricing</a></li>
+            </ul>
+            <a href="../index.html#waitlist" class="nav-cta">Join Waitlist</a>
+            <button class="nav-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="section text-center">
+        <div class="container">
+            <div style="font-size: 5rem; margin-bottom: 1rem;">🎯</div>
+            <h1 style="color: #8B5CF6;">Goals Sphere - Interactive Demo</h1>
+            <p class="text-light" style="font-size: 1.3rem; max-width: 700px; margin: 2rem auto;">
+                56 goals. Relentless tracking. Apex ensures you finish what you start.
+            </p>
+            <span class="badge badge-goals" style="font-size: 1rem; padding: 0.5rem 1rem;">AI Agent: Apex</span>
+        </div>
+    </section>
+
+    <!-- Demo Dashboard -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="gradient-text">Live Dashboard</h2>
+                <p class="section-subtitle">
+                    This is what your Goals Sphere looks like. Real tracking. Real intelligence.
+                </p>
+            </div>
+
+            <!-- Stats Overview -->
+            <div class="grid grid-3 mb-lg">
+                <div class="card card-goals">
+                    <h3 style="color: #8B5CF6; font-size: 3rem; margin-bottom: 0.5rem;">56</h3>
+                    <p class="text-light">Active Goals</p>
+                </div>
+                <div class="card card-goals">
+                    <h3 style="color: #10B981; font-size: 3rem; margin-bottom: 0.5rem;">42</h3>
+                    <p class="text-light">Completed This Month</p>
+                </div>
+                <div class="card card-goals">
+                    <h3 style="color: #F59E0B; font-size: 3rem; margin-bottom: 0.5rem;">8</h3>
+                    <p class="text-light">Need Attention</p>
+                </div>
+            </div>
+
+            <!-- Goal Categories -->
+            <div class="grid grid-2">
+                <div class="card">
+                    <h3 class="gradient-text mb-md">Business Goals</h3>
+                    <div style="margin-bottom: 1rem; padding: 1rem; background: rgba(139, 92, 246, 0.1); border-left: 3px solid #8B5CF6; border-radius: 8px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                            <span style="font-weight: 600;">Launch My42 Product</span>
+                            <span style="color: #10B981;">On Track</span>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); height: 8px; border-radius: 4px; overflow: hidden;">
+                            <div style="background: linear-gradient(90deg, #8B5CF6, #667eea); height: 100%; width: 78%;"></div>
+                        </div>
+                        <p class="text-muted" style="font-size: 0.9rem; margin-top: 0.5rem;">78% complete • 14 days remaining</p>
+                    </div>
+
+                    <div style="margin-bottom: 1rem; padding: 1rem; background: rgba(139, 92, 246, 0.1); border-left: 3px solid #8B5CF6; border-radius: 8px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                            <span style="font-weight: 600;">Grow YouTube to 10K Subs</span>
+                            <span style="color: #F59E0B;">Stalled</span>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); height: 8px; border-radius: 4px; overflow: hidden;">
+                            <div style="background: linear-gradient(90deg, #F59E0B, #EF4444); height: 100%; width: 23%;"></div>
+                        </div>
+                        <p class="text-muted" style="font-size: 0.9rem; margin-top: 0.5rem;">23% complete • No update: 7 days</p>
+                    </div>
+
+                    <div style="padding: 1rem; background: rgba(139, 92, 246, 0.1); border-left: 3px solid #8B5CF6; border-radius: 8px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                            <span style="font-weight: 600;">Revenue: $10K/month</span>
+                            <span style="color: #10B981;">Ahead</span>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); height: 8px; border-radius: 4px; overflow: hidden;">
+                            <div style="background: linear-gradient(90deg, #10B981, #14B8A6); height: 100%; width: 92%;"></div>
+                        </div>
+                        <p class="text-muted" style="font-size: 0.9rem; margin-top: 0.5rem;">$9,200/month current • Trending up</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="gradient-text mb-md">Health Goals</h3>
+                    <div style="margin-bottom: 1rem; padding: 1rem; background: rgba(16, 185, 129, 0.1); border-left: 3px solid #10B981; border-radius: 8px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                            <span style="font-weight: 600;">Run 100km This Month</span>
+                            <span style="color: #10B981;">On Track</span>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); height: 8px; border-radius: 4px; overflow: hidden;">
+                            <div style="background: linear-gradient(90deg, #10B981, #14B8A6); height: 100%; width: 67%;"></div>
+                        </div>
+                        <p class="text-muted" style="font-size: 0.9rem; margin-top: 0.5rem;">67km done • Pace: Perfect</p>
+                    </div>
+
+                    <div style="margin-bottom: 1rem; padding: 1rem; background: rgba(16, 185, 129, 0.1); border-left: 3px solid #10B981; border-radius: 8px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                            <span style="font-weight: 600;">Sleep 8h Average</span>
+                            <span style="color: #10B981;">Achieved</span>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); height: 8px; border-radius: 4px; overflow: hidden;">
+                            <div style="background: linear-gradient(90deg, #10B981, #14B8A6); height: 100%; width: 100%;"></div>
+                        </div>
+                        <p class="text-muted" style="font-size: 0.9rem; margin-top: 0.5rem;">8.2h average • 7-day streak</p>
+                    </div>
+
+                    <div style="padding: 1rem; background: rgba(16, 185, 129, 0.1); border-left: 3px solid #10B981; border-radius: 8px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                            <span style="font-weight: 600;">Gym 4x Per Week</span>
+                            <span style="color: #F59E0B;">Behind</span>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); height: 8px; border-radius: 4px; overflow: hidden;">
+                            <div style="background: linear-gradient(90deg, #F59E0B, #EF4444); height: 100%; width: 50%;"></div>
+                        </div>
+                        <p class="text-muted" style="font-size: 0.9rem; margin-top: 0.5rem;">2/4 sessions • Need 2 more this week</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apex Intelligence -->
+    <section class="section" style="background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="gradient-text">Apex Intelligence</h2>
+                <p class="section-subtitle">
+                    Your AI agent analyzes patterns and takes action.
+                </p>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="card card-goals">
+                    <div class="card-icon">🔔</div>
+                    <h3 style="color: #8B5CF6;">Aggressive Nudges</h3>
+                    <p class="text-light">
+                        "Goal stalled: 14 days." "4 days home. MOVE."
+                        Apex doesn't let you forget.
+                    </p>
+                </div>
+
+                <div class="card card-goals">
+                    <div class="card-icon">📊</div>
+                    <h3 style="color: #8B5CF6;">Pattern Detection</h3>
+                    <p class="text-light">
+                        Notices when goals correlate. "Gym ↑ → Productivity ↑"
+                        Learns what works for you.
+                    </p>
+                </div>
+
+                <div class="card card-goals">
+                    <div class="card-icon">🎙️</div>
+                    <h3 style="color: #8B5CF6;">Voice Control</h3>
+                    <p class="text-light">
+                        "Apex, mark gym done." "Apex, add goal: Read 2 books."
+                        Hands-free task management.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Tasks -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="gradient-text">Today's Tasks</h2>
+                <p class="section-subtitle">
+                    Apex breaks down your goals into daily actions.
+                </p>
+            </div>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="card">
+                    <div style="margin-bottom: 1rem; padding: 1rem; background: rgba(16, 185, 129, 0.1); border-radius: 8px;">
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 24px; height: 24px; border-radius: 50%; background: #10B981; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">✓</div>
+                            <span style="flex: 1;">Morning workout - 45 min</span>
+                            <span class="badge badge-health">Health</span>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 1rem; padding: 1rem; background: rgba(16, 185, 129, 0.1); border-radius: 8px;">
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 24px; height: 24px; border-radius: 50%; background: #10B981; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">✓</div>
+                            <span style="flex: 1;">Ship landing page for My42</span>
+                            <span class="badge badge-business">Business</span>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 1rem; padding: 1rem; background: rgba(139, 92, 246, 0.1); border-radius: 8px; border: 2px dashed #8B5CF6;">
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 24px; height: 24px; border-radius: 50%; border: 2px solid #8B5CF6; flex-shrink: 0;"></div>
+                            <span style="flex: 1;">Record YouTube video</span>
+                            <span class="badge badge-business">Business</span>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 1rem; padding: 1rem; background: rgba(139, 92, 246, 0.1); border-radius: 8px; border: 2px dashed #8B5CF6;">
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 24px; height: 24px; border-radius: 50%; border: 2px solid #8B5CF6; flex-shrink: 0;"></div>
+                            <span style="flex: 1;">Read 30 pages</span>
+                            <span class="badge badge-development">Development</span>
+                        </div>
+                    </div>
+
+                    <div style="padding: 1rem; background: rgba(139, 92, 246, 0.1); border-radius: 8px; border: 2px dashed #8B5CF6;">
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 24px; height: 24px; border-radius: 50%; border: 2px solid #8B5CF6; flex-shrink: 0;"></div>
+                            <span style="flex: 1;">Evening gym session</span>
+                            <span class="badge badge-health">Health</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" style="background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px);">
+        <div class="container">
+            <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+                <h2 class="gradient-text mb-md">Experience the Full System</h2>
+                <p class="text-light mb-lg" style="font-size: 1.2rem;">
+                    Goals is just one sphere. Health, Finance, Social, Business, Development.
+                    All connected. All optimized.
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="../index.html#waitlist" class="btn btn-primary btn-large">Join Waitlist</a>
+                    <a href="../spheres.html" class="btn btn-secondary btn-large">Explore All Spheres</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p class="footer-tagline">Don't Panic</p>
+            <p class="footer-text">
+                My42 - The Life Operating System. Coming soon.
+            </p>
+            <div class="footer-links">
+                <a href="mailto:hello@my42.xyz" class="footer-link">Email</a>
+                <a href="https://twitter.com/my42" class="footer-link" target="_blank">Twitter</a>
+                <a href="https://t.me/my42" class="footer-link" target="_blank">Telegram</a>
+            </div>
+            <p class="copyright">
+                © 2026 My42. The answer to everything.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Generate stars
+        function createStars() {
+            const starsContainer = document.getElementById('stars');
+            const numberOfStars = 100;
+
+            for (let i = 0; i < numberOfStars; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.animationDelay = Math.random() * 3 + 's';
+                starsContainer.appendChild(star);
+            }
+        }
+
+        window.addEventListener('load', createStars);
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

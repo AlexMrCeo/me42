@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Overview - My42</title>
+    <meta name="description" content="Your daily life dashboard. Calm, intelligent, actionable.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/demo.css">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+<body>
+    <div class="cosmic-bg"></div>
+    <div class="stars" id="stars"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">my42</a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../spheres.html" class="nav-link">Spheres</a></li>
+                <li><a href="../life-score.html" class="nav-link">Life Score</a></li>
+                <li><a href="../how-it-works.html" class="nav-link">How It Works</a></li>
+                <li><a href="../pricing.html" class="nav-link">Pricing</a></li>
+            </ul>
+            <a href="../index.html#waitlist" class="nav-cta">Join Waitlist</a>
+            <button class="nav-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Main Dashboard Container -->
+    <div class="container" style="max-width: 1000px; padding-top: 2.5rem; padding-bottom: 4rem;">
+
+        <!-- ======================== -->
+        <!-- TOP: LIFE DASHBOARD      -->
+        <!-- ======================== -->
+        <section style="margin-bottom: 3rem; padding-bottom: 3rem; border-bottom: 2px solid rgba(255,255,255,0.1);">
+
+            <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; margin-bottom: 2rem;">
+
+                <!-- Life Score Circle -->
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <svg width="180" height="180" viewBox="0 0 180 180">
+                        <!-- Background circle -->
+                        <circle cx="90" cy="90" r="70" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="12"/>
+                        <!-- Progress circle (79% = 79/100 * 439.6 = 347.5) -->
+                        <circle cx="90" cy="90" r="70" fill="none"
+                                stroke="url(#gradient)"
+                                stroke-width="12"
+                                stroke-dasharray="439.6"
+                                stroke-dashoffset="90.3"
+                                stroke-linecap="round"
+                                transform="rotate(-90 90 90)"
+                                style="transition: stroke-dashoffset 1s ease;"/>
+                        <defs>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Score text -->
+                        <text x="90" y="95" text-anchor="middle" fill="#ffffff" font-size="48" font-weight="900">79</text>
+                        <text x="90" y="115" text-anchor="middle" fill="#808080" font-size="12">Life Score</text>
+                    </svg>
+                    <p style="font-size: 0.85rem; color: #a0a0a0; margin-top: 1rem; text-align: center;">
+                        Overall life alignment
+                    </p>
+                    <div style="margin-top: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <span style="color: #10B981; font-size: 1rem;">▲</span>
+                        <span style="color: #10B981; font-weight: 500; font-size: 0.85rem;">+3 this week</span>
+                    </div>
+                </div>
+
+                <!-- Spheres Overview -->
+                <div>
+                    <h3 style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1.5px; color: #808080; margin-bottom: 1.5rem; font-weight: 600;">Sphere Status</h3>
+
+                    <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.5rem;">
+                        <!-- Health - Green -->
+                        <div class="sphere-indicator" data-sphere="health">
+                            <svg width="70" height="70" viewBox="0 0 70 70">
+                                <circle cx="35" cy="35" r="30" fill="none" stroke="rgba(16, 185, 129, 0.2)" stroke-width="6"/>
+                                <circle cx="35" cy="35" r="30" fill="none"
+                                        stroke="#10B981"
+                                        stroke-width="6"
+                                        stroke-dasharray="188.4"
+                                        stroke-dashoffset="24.5"
+                                        stroke-linecap="round"
+                                        transform="rotate(-90 35 35)"/>
+                                <text x="35" y="40" text-anchor="middle" fill="#10B981" font-size="16" font-weight="700">87</text>
+                            </svg>
+                            <p style="font-size: 0.8rem; color: #e0e0e0; margin-top: 0.5rem; text-align: center; font-weight: 500;">Health</p>
+                            <div class="sphere-tooltip">
+                                <p style="font-weight: 600; margin-bottom: 0.5rem; color: #10B981;">Health: 87/100</p>
+                                <ul style="font-size: 0.85rem; margin: 0; padding-left: 1.2rem; line-height: 1.6;">
+                                    <li>12-day workout streak</li>
+                                    <li>Recovery 89%</li>
+                                </ul>
+                                <p style="font-size: 0.85rem; margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.1); color: #10B981; font-weight: 600;">
+                                    Main driver: Consistency
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Finance - Yellow -->
+                        <div class="sphere-indicator" data-sphere="finance">
+                            <svg width="70" height="70" viewBox="0 0 70 70">
+                                <circle cx="35" cy="35" r="30" fill="none" stroke="rgba(245, 158, 11, 0.2)" stroke-width="6"/>
+                                <circle cx="35" cy="35" r="30" fill="none"
+                                        stroke="#F59E0B"
+                                        stroke-width="6"
+                                        stroke-dasharray="188.4"
+                                        stroke-dashoffset="52.8"
+                                        stroke-linecap="round"
+                                        transform="rotate(-90 35 35)"/>
+                                <text x="35" y="40" text-anchor="middle" fill="#F59E0B" font-size="16" font-weight="700">72</text>
+                            </svg>
+                            <p style="font-size: 0.8rem; color: #e0e0e0; margin-top: 0.5rem; text-align: center; font-weight: 500;">Finance</p>
+                            <div class="sphere-tooltip">
+                                <p style="font-weight: 600; margin-bottom: 0.5rem; color: #F59E0B;">Finance: 72/100</p>
+                                <ul style="font-size: 0.85rem; margin: 0; padding-left: 1.2rem; line-height: 1.6;">
+                                    <li>€120 over budget</li>
+                                    <li>Restaurant spending +€80</li>
+                                </ul>
+                                <p style="font-size: 0.85rem; margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.1); color: #F59E0B; font-weight: 600;">
+                                    Focus: Review spending
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Development - Green -->
+                        <div class="sphere-indicator" data-sphere="development">
+                            <svg width="70" height="70" viewBox="0 0 70 70">
+                                <circle cx="35" cy="35" r="30" fill="none" stroke="rgba(20, 184, 166, 0.2)" stroke-width="6"/>
+                                <circle cx="35" cy="35" r="30" fill="none"
+                                        stroke="#14B8A6"
+                                        stroke-width="6"
+                                        stroke-dasharray="188.4"
+                                        stroke-dashoffset="41.4"
+                                        stroke-linecap="round"
+                                        transform="rotate(-90 35 35)"/>
+                                <text x="35" y="40" text-anchor="middle" fill="#14B8A6" font-size="16" font-weight="700">78</text>
+                            </svg>
+                            <p style="font-size: 0.8rem; color: #e0e0e0; margin-top: 0.5rem; text-align: center; font-weight: 500;">Development</p>
+                            <div class="sphere-tooltip">
+                                <p style="font-weight: 600; margin-bottom: 0.5rem; color: #14B8A6;">Development: 78/100</p>
+                                <ul style="font-size: 0.85rem; margin: 0; padding-left: 1.2rem; line-height: 1.6;">
+                                    <li>4-week learning streak</li>
+                                    <li>Reading on target</li>
+                                </ul>
+                                <p style="font-size: 0.85rem; margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.1); color: #14B8A6; font-weight: 600;">
+                                    Main driver: Consistency
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Social - Red -->
+                        <div class="sphere-indicator" data-sphere="social">
+                            <svg width="70" height="70" viewBox="0 0 70 70">
+                                <circle cx="35" cy="35" r="30" fill="none" stroke="rgba(239, 68, 68, 0.2)" stroke-width="6"/>
+                                <circle cx="35" cy="35" r="30" fill="none"
+                                        stroke="#EF4444"
+                                        stroke-width="6"
+                                        stroke-dasharray="188.4"
+                                        stroke-dashoffset="66"
+                                        stroke-linecap="round"
+                                        transform="rotate(-90 35 35)"/>
+                                <text x="35" y="40" text-anchor="middle" fill="#EF4444" font-size="16" font-weight="700">65</text>
+                            </svg>
+                            <p style="font-size: 0.8rem; color: #e0e0e0; margin-top: 0.5rem; text-align: center; font-weight: 500;">Social</p>
+                            <div class="sphere-tooltip">
+                                <p style="font-weight: 600; margin-bottom: 0.5rem; color: #EF4444;">Social: 65/100</p>
+                                <ul style="font-size: 0.85rem; margin: 0; padding-left: 1.2rem; line-height: 1.6;">
+                                    <li>4 days isolated</li>
+                                    <li>Last event: 6 days ago</li>
+                                </ul>
+                                <p style="font-size: 0.85rem; margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.1); color: #EF4444; font-weight: 600;">
+                                    Focus: Contact friends
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Business - Green -->
+                        <div class="sphere-indicator" data-sphere="business">
+                            <svg width="70" height="70" viewBox="0 0 70 70">
+                                <circle cx="35" cy="35" r="30" fill="none" stroke="rgba(59, 130, 246, 0.2)" stroke-width="6"/>
+                                <circle cx="35" cy="35" r="30" fill="none"
+                                        stroke="#3B82F6"
+                                        stroke-width="6"
+                                        stroke-dasharray="188.4"
+                                        stroke-dashoffset="17"
+                                        stroke-linecap="round"
+                                        transform="rotate(-90 35 35)"/>
+                                <text x="35" y="40" text-anchor="middle" fill="#3B82F6" font-size="16" font-weight="700">91</text>
+                            </svg>
+                            <p style="font-size: 0.8rem; color: #e0e0e0; margin-top: 0.5rem; text-align: center; font-weight: 500;">Business</p>
+                            <div class="sphere-tooltip">
+                                <p style="font-weight: 600; margin-bottom: 0.5rem; color: #3B82F6;">Business: 91/100</p>
+                                <ul style="font-size: 0.85rem; margin: 0; padding-left: 1.2rem; line-height: 1.6;">
+                                    <li>Revenue +23%</li>
+                                    <li>Launch on track</li>
+                                </ul>
+                                <p style="font-size: 0.85rem; margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.1); color: #3B82F6; font-weight: 600;">
+                                    Main driver: Momentum
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trends & Calendar Row -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+
+                <!-- 7-Day Trend -->
+                <div>
+                    <h3 style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1.5px; color: #808080; margin-bottom: 1rem; font-weight: 600;">7-Day Trend</h3>
+                    <svg width="100%" height="80" viewBox="0 0 300 80" style="background: rgba(255,255,255,0.02); border-radius: 8px; padding: 10px;">
+                        <!-- Grid lines -->
+                        <line x1="0" y1="60" x2="300" y2="60" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+                        <line x1="0" y1="40" x2="300" y2="40" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+                        <line x1="0" y1="20" x2="300" y2="20" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+
+                        <!-- Trend line (76→77→76→78→77→79→79) -->
+                        <polyline points="0,60 50,55 100,60 150,50 200,55 250,40 300,40"
+                                  fill="none"
+                                  stroke="url(#lineGradient)"
+                                  stroke-width="2.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        <defs>
+                            <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#10B981;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+
+                        <!-- Data points -->
+                        <circle cx="0" cy="60" r="3" fill="#667eea"/>
+                        <circle cx="50" cy="55" r="3" fill="#667eea"/>
+                        <circle cx="100" cy="60" r="3" fill="#667eea"/>
+                        <circle cx="150" cy="50" r="3" fill="#667eea"/>
+                        <circle cx="200" cy="55" r="3" fill="#667eea"/>
+                        <circle cx="250" cy="40" r="3" fill="#10B981"/>
+                        <circle cx="300" cy="40" r="4" fill="#10B981"/>
+
+                        <!-- Labels -->
+                        <text x="0" y="75" fill="#606060" font-size="9">Mon</text>
+                        <text x="250" y="75" fill="#10B981" font-size="9" font-weight="600">Today</text>
+                    </svg>
+                </div>
+
+                <!-- Mini Calendar -->
+                <div>
+                    <h3 style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1.5px; color: #808080; margin-bottom: 1rem; font-weight: 600;">January 2026</h3>
+                    <div style="background: rgba(255,255,255,0.02); border-radius: 8px; padding: 10px;">
+                        <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; text-align: center;">
+                            <!-- Header -->
+                            <div style="font-size: 0.7rem; color: #606060; font-weight: 600;">M</div>
+                            <div style="font-size: 0.7rem; color: #606060; font-weight: 600;">T</div>
+                            <div style="font-size: 0.7rem; color: #606060; font-weight: 600;">W</div>
+                            <div style="font-size: 0.7rem; color: #606060; font-weight: 600;">T</div>
+                            <div style="font-size: 0.7rem; color: #606060; font-weight: 600;">F</div>
+                            <div style="font-size: 0.7rem; color: #606060; font-weight: 600;">S</div>
+                            <div style="font-size: 0.7rem; color: #606060; font-weight: 600;">S</div>
+                            <!-- Days -->
+                            <div style="font-size: 0.75rem; color: #404040; padding: 2px;"></div>
+                            <div style="font-size: 0.75rem; color: #404040; padding: 2px;"></div>
+                            <div style="font-size: 0.75rem; color: #808080; padding: 2px;">1</div>
+                            <div style="font-size: 0.75rem; color: #808080; padding: 2px;">2</div>
+                            <div style="font-size: 0.75rem; color: #808080; padding: 2px;">3</div>
+                            <div style="font-size: 0.75rem; color: #808080; padding: 2px;">4</div>
+                            <div style="font-size: 0.75rem; color: #808080; padding: 2px;">5</div>
+                            <div style="font-size: 0.75rem; color: #808080; padding: 2px; position: relative;">
+                                6
+                                <span style="position: absolute; bottom: -2px; left: 50%; transform: translateX(-50%); width: 4px; height: 4px; background: #10B981; border-radius: 50%;"></span>
+                            </div>
+                            <div style="font-size: 0.75rem; color: #808080; padding: 2px;">7</div>
+                            <div style="font-size: 0.75rem; color: #808080; padding: 2px;">8</div>
+                            <div style="font-size: 0.75rem; color: #808080; padding: 2px;">9</div>
+                            <div style="font-size: 0.75rem; color: #808080; padding: 2px;">10</div>
+                            <div style="font-size: 0.75rem; color: #808080; padding: 2px;">11</div>
+                            <div style="font-size: 0.75rem; color: #808080; padding: 2px;">12</div>
+                            <div style="font-size: 0.75rem; color: #808080; padding: 2px; position: relative;">
+                                13
+                                <span style="position: absolute; bottom: -2px; left: 50%; transform: translateX(-50%); width: 4px; height: 4px; background: #3B82F6; border-radius: 50%;"></span>
+                            </div>
+                            <div style="font-size: 0.75rem; color: #808080; padding: 2px;">14</div>
+                            <div style="font-size: 0.75rem; color: #808080; padding: 2px;">15</div>
+                            <div style="font-size: 0.75rem; color: #808080; padding: 2px;">16</div>
+                            <div style="font-size: 0.75rem; color: #808080; padding: 2px;">17</div>
+                            <div style="font-size: 0.75rem; color: #808080; padding: 2px;">18</div>
+                            <div style="font-size: 0.75rem; color: #808080; padding: 2px;">19</div>
+                            <div style="font-size: 0.75rem; color: #808080; padding: 2px;">20</div>
+                            <div style="font-size: 0.75rem; color: #808080; padding: 2px;">21</div>
+                            <div style="font-size: 0.75rem; color: #808080; padding: 2px;">22</div>
+                            <div style="font-size: 0.75rem; color: #808080; padding: 2px;">23</div>
+                            <div style="font-size: 0.75rem; color: #808080; padding: 2px;">24</div>
+                            <div style="font-size: 0.75rem; color: #808080; padding: 2px;">25</div>
+                            <div style="font-size: 0.75rem; color: #808080; padding: 2px; position: relative;">
+                                26
+                                <span style="position: absolute; bottom: -2px; left: 50%; transform: translateX(-50%); width: 4px; height: 4px; background: #EC4899; border-radius: 50%;"></span>
+                            </div>
+                            <div style="font-size: 0.75rem; color: #808080; padding: 2px;">27</div>
+                            <div style="font-size: 0.75rem; color: #808080; padding: 2px;">28</div>
+                            <div style="font-size: 0.75rem; color: #808080; padding: 2px;">29</div>
+                            <div style="font-size: 0.75rem; color: #808080; padding: 2px;">30</div>
+                            <div style="font-size: 0.75rem; color: #808080; padding: 2px;">31</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ======================== -->
+        <!-- BOTTOM: TODAY ACTIONS    -->
+        <!-- ======================== -->
+        <section>
+            <h2 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.5rem;">Today</h2>
+            <p style="font-size: 0.85rem; color: #808080; margin-bottom: 2rem;">6 Jan 2026</p>
+
+            <!-- 1. Urgent -->
+            <div style="margin-bottom: 1.5rem;">
+                <h3 style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1.2px; color: #EF4444; margin-bottom: 0.75rem; font-weight: 600;">Urgent</h3>
+                <div class="task-list">
+                    <div class="task-row">
+                        <input type="checkbox"><span class="task-text">Contact 1 friend</span><span class="task-tag task-tag-social">Social</span>
+                    </div>
+                    <div class="task-row">
+                        <input type="checkbox"><span class="task-text">Review discretionary spending</span><span class="task-tag task-tag-finance">Finance</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Schedule -->
+            <div style="margin-bottom: 1.5rem;">
+                <h3 style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1.2px; color: #808080; margin-bottom: 0.75rem; font-weight: 600;">Schedule</h3>
+                <div class="task-list">
+                    <div class="task-row">
+                        <input type="checkbox"><span class="task-text">Morning workout</span><span class="task-tag task-tag-health">Health</span><span class="task-time">7:00</span>
+                    </div>
+                    <div class="task-row">
+                        <input type="checkbox"><span class="task-text">Ship landing page update</span><span class="task-tag task-tag-business">Business</span><span class="task-time">9:00</span>
+                    </div>
+                    <div class="task-row">
+                        <input type="checkbox"><span class="task-text">Read 30 pages</span><span class="task-tag task-tag-development">Dev</span><span class="task-time">Eve</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Optional -->
+            <div>
+                <h3 style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1.2px; color: #606060; margin-bottom: 0.75rem; font-weight: 600;">Optional</h3>
+                <div class="task-list">
+                    <div class="task-row" style="opacity: 0.7;">
+                        <input type="checkbox"><span class="task-text">5-min stretch</span><span class="task-tag task-tag-health">Health</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p class="footer-tagline">Don't Panic</p>
+            <p class="footer-text">My42 - The Life Operating System. Coming soon.</p>
+            <div class="footer-links">
+                <a href="mailto:hello@my42.xyz" class="footer-link">Email</a>
+                <a href="https://twitter.com/my42" class="footer-link" target="_blank">Twitter</a>
+                <a href="https://t.me/my42" class="footer-link" target="_blank">Telegram</a>
+            </div>
+            <p class="copyright">© 2026 My42. The answer to everything.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Generate stars
+        function createStars() {
+            const starsContainer = document.getElementById('stars');
+            const numberOfStars = 100;
+            for (let i = 0; i < numberOfStars; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.animationDelay = Math.random() * 3 + 's';
+                starsContainer.appendChild(star);
+            }
+        }
+
+        window.addEventListener('load', createStars);
+    </script>
+</body>
+</html>

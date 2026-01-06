@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Insights - My42</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/demo.css">
+</head>
+<body>
+    <div class="cosmic-bg"></div>
+
+    <nav class="nav">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="health.html" style="text-decoration: none; color: #10B981; font-weight: 600;">← Health Sphere</a>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 6rem; max-width: 900px;">
+
+        <!-- Header with mini dashboard -->
+        <section style="margin-bottom: 3rem; text-align: center;">
+            <h1 style="font-size: 2rem; margin-bottom: 1rem;">Health Insights & Drivers</h1>
+
+            <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin-bottom: 2rem;">
+                <!-- Mini score ring -->
+                <svg width="80" height="80" viewBox="0 0 80 80">
+                    <defs>
+                        <linearGradient id="miniHealthGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#14B8A6;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="40" cy="40" r="30" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="6"/>
+                    <circle cx="40" cy="40" r="30" fill="none"
+                            stroke="url(#miniHealthGradient)"
+                            stroke-width="6"
+                            stroke-dasharray="188.5"
+                            stroke-dashoffset="24.5"
+                            stroke-linecap="round"
+                            transform="rotate(-90 40 40)"/>
+                    <text x="40" y="45" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="900">87</text>
+                </svg>
+
+                <!-- Mini trend -->
+                <div>
+                    <p style="font-size: 0.85rem; color: #808080; margin-bottom: 0.5rem;">Trend</p>
+                    <p style="font-size: 1.5rem; font-weight: 700; color: #10B981; margin: 0;">▲ +3</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Score Breakdown -->
+        <section style="margin-bottom: 3rem; padding: 1.5rem; background: rgba(16, 185, 129, 0.05); border-radius: 8px;">
+            <h3 style="font-size: 1.1rem; margin-bottom: 1rem; color: #10B981;">Health Score: 87/100</h3>
+            <p style="color: #a0a0a0; margin-bottom: 1.5rem; font-size: 0.95rem;">Why this score: 12-day workout streak (+15), Sleep quality excellent (+8), Coverage gap: nutrition tracking (-3)</p>
+
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; font-size: 0.9rem;">
+                <div>
+                    <p style="color: #808080; margin-bottom: 0.25rem;">Alignment</p>
+                    <p style="color: #10B981; font-weight: 600; font-size: 1.2rem;">92</p>
+                </div>
+                <div>
+                    <p style="color: #808080; margin-bottom: 0.25rem;">Momentum</p>
+                    <p style="color: #10B981; font-weight: 600; font-size: 1.2rem;">88</p>
+                </div>
+                <div>
+                    <p style="color: #808080; margin-bottom: 0.25rem;">Coverage</p>
+                    <p style="color: #F59E0B; font-weight: 600; font-size: 1.2rem;">75</p>
+                </div>
+                <div>
+                    <p style="color: #808080; margin-bottom: 0.25rem;">Stability</p>
+                    <p style="color: #10B981; font-weight: 600; font-size: 1.2rem;">82</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- What's Working -->
+        <section style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: #10B981;">What's Working ✓</h2>
+
+            <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: rgba(16, 185, 129, 0.05); border-left: 3px solid #10B981; border-radius: 8px;">
+                <h3 style="font-size: 1.1rem; color: #10B981; margin-bottom: 0.5rem;">12-Day Workout Streak</h3>
+                <p style="color: #a0a0a0; margin-bottom: 0.75rem; font-size: 0.95rem;">Longest streak this year. Consistency exceptional. Average strain: 14.2/day.</p>
+                <p style="color: #e0e0e0; font-size: 0.9rem;"><strong>Impact:</strong> +15 points to Health score</p>
+            </div>
+
+            <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: rgba(16, 185, 129, 0.05); border-left: 3px solid #10B981; border-radius: 8px;">
+                <h3 style="font-size: 1.1rem; color: #10B981; margin-bottom: 0.5rem;">Recovery Optimization</h3>
+                <p style="color: #a0a0a0; margin-bottom: 0.75rem; font-size: 0.95rem;">Recovery averaging 89%. HRV 68ms (above baseline). Ready for high-intensity sessions.</p>
+                <p style="color: #e0e0e0; font-size: 0.9rem;"><strong>Impact:</strong> +8 points to Health score</p>
+            </div>
+
+            <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: rgba(16, 185, 129, 0.05); border-left: 3px solid #10B981; border-radius: 8px;">
+                <h3 style="font-size: 1.1rem; color: #10B981; margin-bottom: 0.5rem;">Running Goal Progress</h3>
+                <p style="color: #a0a0a0; margin-bottom: 0.75rem; font-size: 0.95rem;">68/100km completed. On pace for monthly target. Velocity strong.</p>
+                <p style="color: #e0e0e0; font-size: 0.9rem;"><strong>Impact:</strong> +5 points to Health score</p>
+            </div>
+        </section>
+
+        <!-- What's Not Working -->
+        <section style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: #F59E0B;">What's Not Working ⚠</h2>
+
+            <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: rgba(245, 158, 11, 0.05); border-left: 3px solid #F59E0B; border-radius: 8px;">
+                <h3 style="font-size: 1.1rem; color: #F59E0B; margin-bottom: 0.5rem;">Sleep Debt Accumulating</h3>
+                <p style="color: #a0a0a0; margin-bottom: 0.75rem; font-size: 0.95rem;">Current debt: -1.2h. Average 7.6h vs 8h target. Quality variable.</p>
+                <p style="color: #e0e0e0; font-size: 0.9rem; margin-bottom: 1rem;"><strong>Impact:</strong> -3 points to Health score</p>
+                <p style="color: #F59E0B; font-weight: 600; font-size: 0.95rem;">→ Recommended action: 10pm bedtime tonight</p>
+            </div>
+
+            <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: rgba(245, 158, 11, 0.05); border-left: 3px solid #F59E0B; border-radius: 8px;">
+                <h3 style="font-size: 1.1rem; color: #F59E0B; margin-bottom: 0.5rem;">Nutrition Tracking Gap</h3>
+                <p style="color: #a0a0a0; margin-bottom: 0.75rem; font-size: 0.95rem;">Missing nutrition data. Coverage incomplete. 70% tracking rate (target: 90%+).</p>
+                <p style="color: #e0e0e0; font-size: 0.9rem; margin-bottom: 1rem;"><strong>Impact:</strong> -5 points to Coverage dimension</p>
+                <p style="color: #F59E0B; font-weight: 600; font-size: 0.95rem;">→ Recommended action: Connect Cal AI, log 3 meals daily</p>
+            </div>
+        </section>
+
+        <!-- Correlations -->
+        <section style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Discovered Correlations</h2>
+
+            <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: rgba(255,255,255,0.02); border-left: 3px solid #667eea; border-radius: 8px;">
+                <h3 style="font-size: 1.1rem; color: #667eea; margin-bottom: 0.5rem;">Gym ↑ → Business Productivity ↑</h3>
+                <p style="color: #a0a0a0; margin-bottom: 0.75rem; font-size: 0.95rem;">89% confidence, 30-day correlation. Morning workouts correlate with +18% business output same day.</p>
+                <p style="color: #e0e0e0; font-size: 0.9rem;"><strong>Implication:</strong> Health directly drives Business performance. Maintain streak.</p>
+            </div>
+
+            <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: rgba(255,255,255,0.02); border-left: 3px solid #667eea; border-radius: 8px;">
+                <h3 style="font-size: 1.1rem; color: #667eea; margin-bottom: 0.5rem;">Sleep Quality ↓ → Development Velocity ↓</h3>
+                <p style="color: #a0a0a0; margin-bottom: 0.75rem; font-size: 0.95rem;">76% confidence. Poor sleep (<7h) reduces learning session quality by 24%.</p>
+                <p style="color: #e0e0e0; font-size: 0.9rem;"><strong>Implication:</strong> Sleep debt risks Development sphere. Prioritize 10pm bedtime.</p>
+            </div>
+        </section>
+
+        <!-- One Best Action -->
+        <section style="margin-bottom: 3rem; padding: 2rem; background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(20, 184, 166, 0.05)); border: 2px solid #10B981; border-radius: 8px; text-align: center;">
+            <h2 style="font-size: 1.3rem; margin-bottom: 1rem; color: #10B981;">One Best Action</h2>
+            <p style="font-size: 1.1rem; color: #e0e0e0; margin-bottom: 0.5rem; font-weight: 600;">Add nutrition tracking via Cal AI</p>
+            <p style="color: #a0a0a0; font-size: 0.95rem;">Coverage is the only yellow dimension. Adding nutrition data will complete the health picture and improve overall score by ~5 points. Easy win.</p>
+        </section>
+
+        <div style="text-align: center; padding: 2rem 0;">
+            <a href="health.html" style="text-decoration: none; color: #10B981; font-weight: 600;">← Back to Health Sphere</a>
+        </div>
+
+    </div>
+</body>
+</html>

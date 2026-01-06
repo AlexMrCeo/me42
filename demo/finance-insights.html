@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Insights - My42</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/demo.css">
+</head>
+<body>
+    <div class="cosmic-bg"></div>
+
+    <nav class="nav">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="finance.html" style="text-decoration: none; color: #F59E0B; font-weight: 600;">← Finance Sphere</a>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 6rem; max-width: 900px;">
+
+        <!-- Header with mini dashboard -->
+        <section style="margin-bottom: 3rem; text-align: center;">
+            <h1 style="font-size: 2rem; margin-bottom: 1rem;">Finance Insights & Drivers</h1>
+
+            <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin-bottom: 2rem;">
+                <!-- Mini score ring -->
+                <svg width="80" height="80" viewBox="0 0 80 80">
+                    <defs>
+                        <linearGradient id="miniFinanceGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#FBBF24;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="40" cy="40" r="30" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="6"/>
+                    <circle cx="40" cy="40" r="30" fill="none"
+                            stroke="url(#miniFinanceGradient)"
+                            stroke-width="6"
+                            stroke-dasharray="188.5"
+                            stroke-dashoffset="52.3"
+                            stroke-linecap="round"
+                            transform="rotate(-90 40 40)"/>
+                    <text x="40" y="45" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="900">72</text>
+                </svg>
+
+                <!-- Mini trend -->
+                <div>
+                    <p style="font-size: 0.85rem; color: #808080; margin-bottom: 0.5rem;">Trend</p>
+                    <p style="font-size: 1.5rem; font-weight: 700; color: #F59E0B; margin: 0;">▼ -2</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Score Breakdown -->
+        <section style="margin-bottom: 3rem; padding: 1.5rem; background: rgba(245, 158, 11, 0.05); border-radius: 8px;">
+            <h3 style="font-size: 1.1rem; margin-bottom: 1rem; color: #F59E0B;">Finance Score: 72/100</h3>
+            <p style="color: #a0a0a0; margin-bottom: 1.5rem; font-size: 0.95rem;">Why this score: Strong net worth growth (+8), Savings rate declining (-4), Budget overspending this month (-6), Investment portfolio stable (+2)</p>
+
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; font-size: 0.9rem;">
+                <div>
+                    <p style="color: #808080; margin-bottom: 0.25rem;">Savings Rate</p>
+                    <p style="color: #F59E0B; font-weight: 600; font-size: 1.2rem;">23</p>
+                </div>
+                <div>
+                    <p style="color: #808080; margin-bottom: 0.25rem;">Budget Control</p>
+                    <p style="color: #EF4444; font-weight: 600; font-size: 1.2rem;">65</p>
+                </div>
+                <div>
+                    <p style="color: #808080; margin-bottom: 0.25rem;">Net Worth Growth</p>
+                    <p style="color: #10B981; font-weight: 600; font-size: 1.2rem;">88</p>
+                </div>
+                <div>
+                    <p style="color: #808080; margin-bottom: 0.25rem;">Investment Health</p>
+                    <p style="color: #10B981; font-weight: 600; font-size: 1.2rem;">82</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- What's Working -->
+        <section style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: #10B981;">What's Working ✓</h2>
+
+            <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: rgba(16, 185, 129, 0.05); border-left: 3px solid #10B981; border-radius: 8px;">
+                <h3 style="font-size: 1.1rem; color: #10B981; margin-bottom: 0.5rem;">Net Worth Growth Trajectory</h3>
+                <p style="color: #a0a0a0; margin-bottom: 0.75rem; font-size: 0.95rem;">€42k current, +€2,340 this month. YoY growth: +€18k (43% increase). On pace for €50k goal in 4 months.</p>
+                <p style="color: #e0e0e0; font-size: 0.9rem;"><strong>Impact:</strong> +8 points to Finance score</p>
+            </div>
+
+            <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: rgba(16, 185, 129, 0.05); border-left: 3px solid #10B981; border-radius: 8px;">
+                <h3 style="font-size: 1.1rem; color: #10B981; margin-bottom: 0.5rem;">Investment Portfolio Stability</h3>
+                <p style="color: #a0a0a0; margin-bottom: 0.75rem; font-size: 0.95rem;">Diversified across stocks (60%), bonds (25%), cash (15%). Returns: +12% YTD. Rebalanced quarterly, on schedule.</p>
+                <p style="color: #e0e0e0; font-size: 0.9rem;"><strong>Impact:</strong> +2 points to Finance score</p>
+            </div>
+
+            <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: rgba(16, 185, 129, 0.05); border-left: 3px solid #10B981; border-radius: 8px;">
+                <h3 style="font-size: 1.1rem; color: #10B981; margin-bottom: 0.5rem;">Emergency Fund Coverage</h3>
+                <p style="color: #a0a0a0; margin-bottom: 0.75rem; font-size: 0.95rem;">€8,400 in emergency reserves. Covers 3.8 months of expenses (target: 3-6 months). Optimal.</p>
+                <p style="color: #e0e0e0; font-size: 0.9rem;"><strong>Impact:</strong> +3 points to Finance score</p>
+            </div>
+        </section>
+
+        <!-- What's Not Working -->
+        <section style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: #F59E0B;">What's Not Working ⚠</h2>
+
+            <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: rgba(245, 158, 11, 0.05); border-left: 3px solid #F59E0B; border-radius: 8px;">
+                <h3 style="font-size: 1.1rem; color: #F59E0B; margin-bottom: 0.5rem;">Monthly Budget Overrun</h3>
+                <p style="color: #a0a0a0; margin-bottom: 0.75rem; font-size: 0.95rem;">Spent €2,680 vs €2,340 budget. Over by €340 (14.5%). Driven by restaurant +€120, coffee +€47, discretionary +€180.</p>
+                <p style="color: #e0e0e0; font-size: 0.9rem; margin-bottom: 1rem;"><strong>Impact:</strong> -4 points to Finance score</p>
+                <p style="color: #F59E0B; font-weight: 600; font-size: 0.95rem;">→ Recommended action: Set weekly spending limit of €550</p>
+            </div>
+
+            <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: rgba(245, 158, 11, 0.05); border-left: 3px solid #F59E0B; border-radius: 8px;">
+                <h3 style="font-size: 1.1rem; color: #F59E0B; margin-bottom: 0.5rem;">Savings Rate Declining</h3>
+                <p style="color: #a0a0a0; margin-bottom: 0.75rem; font-size: 0.95rem;">Current: 23%. Last month: 28%. Target: 30%. Downward trend over 2 months due to increased discretionary spending.</p>
+                <p style="color: #e0e0e0; font-size: 0.9rem; margin-bottom: 1rem;"><strong>Impact:</strong> -2 points to Finance score</p>
+                <p style="color: #F59E0B; font-weight: 600; font-size: 0.95rem;">→ Recommended action: Automate €200/week to savings, reduce dining out to 2x per week</p>
+            </div>
+        </section>
+
+        <!-- Correlations -->
+        <section style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Discovered Correlations</h2>
+
+            <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: rgba(255,255,255,0.02); border-left: 3px solid #667eea; border-radius: 8px;">
+                <h3 style="font-size: 1.1rem; color: #667eea; margin-bottom: 0.5rem;">Business Output ↑ → Income ↑</h3>
+                <p style="color: #a0a0a0; margin-bottom: 0.75rem; font-size: 0.95rem;">94% confidence, 8-week correlation. For every additional YouTube video published, projected revenue increases by €45-80.</p>
+                <p style="color: #e0e0e0; font-size: 0.9rem;"><strong>Implication:</strong> Boost Business sphere to improve Finance. Current 3/week video pace is optimal.</p>
+            </div>
+
+            <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: rgba(255,255,255,0.02); border-left: 3px solid #667eea; border-radius: 8px;">
+                <h3 style="font-size: 1.1rem; color: #667eea; margin-bottom: 0.5rem;">Dining Out Frequency ↑ → Spending ↑</h3>
+                <p style="color: #a0a0a0; margin-bottom: 0.75rem; font-size: 0.95rem;">92% confidence. Each additional restaurant visit costs €35-50. This month: 8 visits (€340+ impact). Previous: 5 visits.</p>
+                <p style="color: #e0e0e0; font-size: 0.9rem;"><strong>Implication:</strong> Limit dining out to 2x per week to recover 7% savings rate.</p>
+            </div>
+        </section>
+
+        <!-- One Best Action -->
+        <section style="margin-bottom: 3rem; padding: 2rem; background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(251, 191, 36, 0.05)); border: 2px solid #F59E0B; border-radius: 8px; text-align: center;">
+            <h2 style="font-size: 1.3rem; margin-bottom: 1rem; color: #F59E0B;">One Best Action</h2>
+            <p style="font-size: 1.1rem; color: #e0e0e0; margin-bottom: 0.5rem; font-weight: 600;">Automate weekly spending limit of €550</p>
+            <p style="color: #a0a0a0; font-size: 0.95rem;">Controlling budget overspend fixes 70% of the problem. €550/week = €2,200/month, well within goal. Automate savings transfer immediately after. This recovers savings rate to 28% within 4 weeks.</p>
+        </section>
+
+        <div style="text-align: center; padding: 2rem 0;">
+            <a href="finance.html" style="text-decoration: none; color: #F59E0B; font-weight: 600;">← Back to Finance Sphere</a>
+        </div>
+
+    </div>
+</body>
+</html>
