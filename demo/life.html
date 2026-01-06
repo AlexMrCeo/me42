@@ -13,24 +13,26 @@
     <div class="cosmic-bg"></div>
     <div class="stars" id="stars"></div>
 
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">my42</a>
-            <ul class="nav-menu">
-                <li><a href="../index.html" class="nav-link">Home</a></li>
-                <li><a href="../spheres.html" class="nav-link">Spheres</a></li>
-                <li><a href="../life-score.html" class="nav-link">Life Score</a></li>
-                <li><a href="../how-it-works.html" class="nav-link">How It Works</a></li>
-                <li><a href="../pricing.html" class="nav-link">Pricing</a></li>
-            </ul>
-            <a href="../index.html#waitlist" class="nav-cta">Join Waitlist</a>
-            <button class="nav-toggle">☰</button>
+    <!-- App Header -->
+    <header class="app-header">
+        <div class="app-header-container">
+            <a href="../index.html" class="app-header-logo">my42</a>
+
+            <div class="app-header-nav-container">
+                <a href="life.html" class="app-header-link active">Life</a>
+                <a href="goals.html" class="app-header-link">Goals</a>
+                <a href="sprints.html" class="app-header-link">Sprints</a>
+            </div>
+
+            <div class="app-header-right">
+                <button class="app-header-menu-toggle">Menu</button>
+                <a href="settings.html" class="app-header-settings">Settings</a>
+            </div>
         </div>
-    </nav>
+    </header>
 
     <!-- Main Dashboard Container -->
-    <div class="container" style="max-width: 1000px; padding-top: 2.5rem; padding-bottom: 4rem;">
+    <div class="container" style="max-width: 1000px; padding-top: 6rem; padding-bottom: 4rem;">
 
         <!-- ======================== -->
         <!-- TOP: LIFE DASHBOARD      -->
@@ -78,6 +80,7 @@
 
                     <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.5rem;">
                         <!-- Health - Green -->
+                        <a href="health.html" style="text-decoration: none; color: inherit;">
                         <div class="sphere-indicator" data-sphere="health">
                             <svg width="70" height="70" viewBox="0 0 70 70">
                                 <circle cx="35" cy="35" r="30" fill="none" stroke="rgba(16, 185, 129, 0.2)" stroke-width="6"/>
@@ -102,8 +105,10 @@
                                 </p>
                             </div>
                         </div>
+                        </a>
 
                         <!-- Finance - Yellow -->
+                        <a href="finance.html" style="text-decoration: none; color: inherit;">
                         <div class="sphere-indicator" data-sphere="finance">
                             <svg width="70" height="70" viewBox="0 0 70 70">
                                 <circle cx="35" cy="35" r="30" fill="none" stroke="rgba(245, 158, 11, 0.2)" stroke-width="6"/>
@@ -128,8 +133,10 @@
                                 </p>
                             </div>
                         </div>
+                        </a>
 
                         <!-- Development - Green -->
+                        <a href="development.html" style="text-decoration: none; color: inherit;">
                         <div class="sphere-indicator" data-sphere="development">
                             <svg width="70" height="70" viewBox="0 0 70 70">
                                 <circle cx="35" cy="35" r="30" fill="none" stroke="rgba(20, 184, 166, 0.2)" stroke-width="6"/>
@@ -154,8 +161,10 @@
                                 </p>
                             </div>
                         </div>
+                        </a>
 
                         <!-- Social - Red -->
+                        <a href="social.html" style="text-decoration: none; color: inherit;">
                         <div class="sphere-indicator" data-sphere="social">
                             <svg width="70" height="70" viewBox="0 0 70 70">
                                 <circle cx="35" cy="35" r="30" fill="none" stroke="rgba(239, 68, 68, 0.2)" stroke-width="6"/>
@@ -180,8 +189,10 @@
                                 </p>
                             </div>
                         </div>
+                        </a>
 
                         <!-- Business - Green -->
+                        <a href="business.html" style="text-decoration: none; color: inherit;">
                         <div class="sphere-indicator" data-sphere="business">
                             <svg width="70" height="70" viewBox="0 0 70 70">
                                 <circle cx="35" cy="35" r="30" fill="none" stroke="rgba(59, 130, 246, 0.2)" stroke-width="6"/>
@@ -206,6 +217,7 @@
                                 </p>
                             </div>
                         </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -395,5 +407,6 @@
 
         window.addEventListener('load', createStars);
     </script>
+    <script src="../js/tasks.js"></script>
 </body>
 </html>
