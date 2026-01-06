@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Sphere - My42</title>
+    <meta name="description" content="Vita monitors your body. WHOOP, Apple Health, workouts, recovery, sleep. Your foundation.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <div class="cosmic-bg"></div>
+    <div class="stars" id="stars"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">my42</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="spheres.html" class="nav-link">Spheres</a></li>
+                <li><a href="life-score.html" class="nav-link">Life Score</a></li>
+                <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+            </ul>
+            <a href="index.html#waitlist" class="nav-cta">Join Waitlist</a>
+            <button class="nav-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="section text-center">
+        <div class="container">
+            <div style="font-size: 5rem; margin-bottom: 1rem;">🏃</div>
+            <h1 style="color: #10B981;">Health Sphere</h1>
+            <p class="text-light" style="font-size: 1.3rem; max-width: 700px; margin: 2rem auto;">
+                Your body is the foundation. Vita ensures it performs at peak.
+            </p>
+            <span class="badge badge-health" style="font-size: 1rem; padding: 0.5rem 1rem;">AI Agent: Vita</span>
+        </div>
+    </section>
+
+    <!-- Agent Introduction -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2">
+                <div>
+                    <h2 class="gradient-text mb-md">Meet Vita</h2>
+                    <p class="text-light mb-md" style="font-size: 1.1rem; line-height: 1.8;">
+                        Vita is your personal health intelligence. A strict coach who watches your 
+                        recovery, tracks your workouts, monitors your sleep, and ensures you don't 
+                        burn out or slack off.
+                    </p>
+                    <p class="text-light" style="line-height: 1.8;">
+                        No excuses. No negotiations. Vita sees the data and tells you the truth. 
+                        "Recovery at 87%. Ready to push today." or "Sleep debt: 2.3 hours. Early night tonight."
+                    </p>
+                </div>
+
+                <div class="card card-health">
+                    <h3 style="color: #10B981; margin-bottom: 1rem;">Vita's Personality</h3>
+                    <ul class="text-light" style="line-height: 2;">
+                        <li><strong>Strict Coach:</strong> No excuses accepted</li>
+                        <li><strong>Data-Driven:</strong> Facts over feelings</li>
+                        <li><strong>Protective:</strong> Prevents burnout</li>
+                        <li><strong>Motivating:</strong> Celebrates wins</li>
+                        <li><strong>Predictive:</strong> Sees patterns before you do</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Vita Tracks -->
+    <section class="section" style="background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="gradient-text">What Vita Tracks</h2>
+                <p class="section-subtitle">
+                    Every metric that matters for optimal physical performance.
+                </p>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="card card-health">
+                    <h3 style="color: #10B981;">Recovery & Strain</h3>
+                    <p class="text-light">
+                        WHOOP recovery score, strain, HRV (heart rate variability), 
+                        resting heart rate. Know exactly how hard you can push today.
+                    </p>
+                </div>
+
+                <div class="card card-health">
+                    <h3 style="color: #10B981;">Workouts</h3>
+                    <p class="text-light">
+                        Frequency, intensity, type, duration. Automatically logged from 
+                        WHOOP or Apple Watch. No manual entry needed.
+                    </p>
+                </div>
+
+                <div class="card card-health">
+                    <h3 style="color: #10B981;">Sleep</h3>
+                    <p class="text-light">
+                        Total sleep, deep sleep, REM, sleep debt. Vita tracks quality 
+                        and correlates it with next-day performance.
+                    </p>
+                </div>
+
+                <div class="card card-health">
+                    <h3 style="color: #10B981;">Daily Activity</h3>
+                    <p class="text-light">
+                        Steps, active calories, sedentary time. Vita notices if you've 
+                        been sitting too long.
+                    </p>
+                </div>
+
+                <div class="card card-health">
+                    <h3 style="color: #10B981;">Nutrition</h3>
+                    <p class="text-light">
+                        Integration with Cal AI. Calorie intake, macros, meal timing. 
+                        Correlated with performance and energy.
+                    </p>
+                </div>
+
+                <div class="card card-health">
+                    <h3 style="color: #10B981;">Trends</h3>
+                    <p class="text-light">
+                        7-day, 30-day, 90-day trends. Vita identifies patterns: 
+                        "Workout consistency declining for 2 weeks."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Vita Does -->
+    <section class="section">
+        <div class="container">
+            <h2 class="gradient-text text-center mb-lg">What Vita Does</h2>
+
+            <div style="max-width: 900px; margin: 0 auto;">
+                <div class="card card-health mb-md">
+                    <h3 style="color: #10B981;">Morning Intelligence</h3>
+                    <p class="text-light mb-md">
+                        Every morning, Vita analyzes your recovery data and tells you exactly 
+                        what your body is ready for.
+                    </p>
+                    <div style="background: rgba(16, 185, 129, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid #10B981;">
+                        <p style="color: #a0a0a0; font-style: italic; margin: 0;">
+                            "Recovery: 87%. HRV: Normal. Sleep: 7.2hrs quality. Body ready. 
+                            Recommendation: High-intensity workout today. You can push hard."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card card-health mb-md">
+                    <h3 style="color: #10B981;">Aggressive Accountability</h3>
+                    <p class="text-light mb-md">
+                        Vita doesn't let you skip. If you said you'd workout 3x per week, 
+                        Vita enforces it.
+                    </p>
+                    <div style="background: rgba(239, 68, 68, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid #EF4444;">
+                        <p style="color: #EF4444; font-weight: 600; margin: 0;">
+                            "⚠️ 4 days no workout. UNACCEPTABLE. Gym. Tonight. No excuses."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card card-health mb-md">
+                    <h3 style="color: #10B981;">Sleep Protection</h3>
+                    <p class="text-light mb-md">
+                        Vita guards your sleep debt like a hawk. If you're running low, 
+                        you'll know about it.
+                    </p>
+                    <div style="background: rgba(16, 185, 129, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid #10B981;">
+                        <p style="color: #a0a0a0; font-style: italic; margin: 0;">
+                            "Sleep debt: 2.3 hours accumulated this week. Performance dropping. 
+                            Recommendation: Early night tonight. Target: 10pm."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card card-health mb-md">
+                    <h3 style="color: #10B981;">Workout Suggestions</h3>
+                    <p class="text-light mb-md">
+                        Based on your recovery, goals, and patterns, Vita suggests optimal workout types and timing.
+                    </p>
+                    <div style="background: rgba(16, 185, 129, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid #10B981;">
+                        <p style="color: #a0a0a0; font-style: italic; margin: 0;">
+                            "Recovery: 42%. Low HRV. Recommendation: Active recovery today. 
+                            Light cardio or yoga. Save intensity for tomorrow."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card card-health">
+                    <h3 style="color: #10B981;">Celebrations</h3>
+                    <p class="text-light mb-md">
+                        Vita is strict but fair. When you're crushing it, you get recognition.
+                    </p>
+                    <div style="background: rgba(16, 185, 129, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid #10B981;">
+                        <p style="color: #10B981; font-weight: 600; margin: 0;">
+                            "🔥 12-day workout streak. Legendary. Health score: 89/100. Keep this going."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integrations -->
+    <section class="section" style="background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px);">
+        <div class="container">
+            <h2 class="gradient-text text-center mb-lg">Integrations</h2>
+
+            <div class="grid grid-auto">
+                <div class="card">
+                    <h3 style="color: #10B981;">WHOOP</h3>
+                    <p class="text-light">
+                        Recovery, strain, HRV, sleep, workouts. Full integration with WHOOP API. 
+                        Data syncs automatically every hour.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3 style="color: #10B981;">Apple Health</h3>
+                    <p class="text-light">
+                        Apple Watch, iPhone health data. Steps, workouts, heart rate, 
+                        sleep, calories. Complete ecosystem sync.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3 style="color: #10B981;">Cal AI</h3>
+                    <p class="text-light">
+                        Nutrition tracking. Take photo of meal, Cal AI logs macros. 
+                        Vita correlates food with performance.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3 style="color: #10B981;">Strava</h3>
+                    <p class="text-light">
+                        Running, cycling, activities. Import workouts automatically. 
+                        Track outdoor training.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Score -->
+    <section class="section">
+        <div class="container text-center">
+            <h2 class="gradient-text mb-md">Your Health Score</h2>
+            <p class="text-light mb-lg" style="font-size: 1.1rem; max-width: 700px; margin: 0 auto 3rem;">
+                Vita calculates your Health Score (0-100) based on all metrics. 
+                It's part of your overall Life Score.
+            </p>
+
+            <div class="card" style="max-width: 500px; margin: 0 auto;">
+                <div style="font-size: 4rem; font-weight: 900; color: #10B981; margin-bottom: 1rem;">
+                    87/100
+                </div>
+                <p class="text-light mb-md">Current Health Score</p>
+
+                <div style="text-align: left;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                        <span>Recovery</span>
+                        <span style="color: #10B981;">92</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                        <span>Workout Consistency</span>
+                        <span style="color: #10B981;">85</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                        <span>Sleep Quality</span>
+                        <span style="color: #F59E0B;">78</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <span>Activity Level</span>
+                        <span style="color: #10B981;">91</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" style="background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px);">
+        <div class="container text-center">
+            <h2 class="gradient-text mb-md">Optimize Your Body</h2>
+            <p class="text-light mb-lg" style="font-size: 1.2rem;">
+                Let Vita be your strict coach. No excuses. Only results.
+            </p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="index.html#waitlist" class="btn btn-primary btn-large">Join Waitlist</a>
+                <a href="finance.html" class="btn btn-secondary btn-large">Next: Finance →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p class="footer-tagline">Don't Panic</p>
+            <p class="footer-text">My42 - The Life Operating System. Coming soon.</p>
+            <div class="footer-links">
+                <a href="mailto:hello@my42.xyz" class="footer-link">Email</a>
+                <a href="https://twitter.com/my42" class="footer-link" target="_blank">Twitter</a>
+                <a href="https://t.me/my42" class="footer-link" target="_blank">Telegram</a>
+            </div>
+            <p class="copyright">© 2026 My42. The answer to everything.</p>
+        </div>
+    </footer>
+
+    <script>
+        function createStars() {
+            const starsContainer = document.getElementById('stars');
+            const numberOfStars = 100;
+            for (let i = 0; i < numberOfStars; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.animationDelay = Math.random() * 3 + 's';
+                starsContainer.appendChild(star);
+            }
+        }
+        window.addEventListener('load', createStars);
+    </script>
+</body>
+</html>

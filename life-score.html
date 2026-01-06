@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Score - My42</title>
+    <meta name="description" content="One number. Complete truth. Your Life Score aggregates all 6 spheres into a single metric.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <div class="cosmic-bg"></div>
+    <div class="stars" id="stars"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">my42</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="spheres.html" class="nav-link">Spheres</a></li>
+                <li><a href="life-score.html" class="nav-link active">Life Score</a></li>
+                <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+            </ul>
+            <a href="index.html#waitlist" class="nav-cta">Join Waitlist</a>
+            <button class="nav-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="section text-center">
+        <div class="container">
+            <div style="font-size: 6rem; font-weight: 900; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1; margin-bottom: 1rem;">
+                79/100
+            </div>
+            <h1>Your Life Score</h1>
+            <p class="text-light" style="font-size: 1.3rem; max-width: 700px; margin: 2rem auto;">
+                One number. Complete truth. Oracle sees all 6 spheres and calculates 
+                exactly where you stand.
+            </p>
+        </div>
+    </section>
+
+    <!-- What is Life Score -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2">
+                <div>
+                    <h2 class="gradient-text mb-md">What is Life Score?</h2>
+                    <p class="text-light mb-md" style="font-size: 1.1rem; line-height: 1.8;">
+                        Your Life Score is a single metric (0-100) that represents the overall 
+                        health of your life across all 6 spheres.
+                    </p>
+                    <p class="text-light mb-md" style="line-height: 1.8;">
+                        It's not an average. It's a weighted aggregate calculated by Oracle based on:
+                    </p>
+                    <ul class="text-light" style="line-height: 2;">
+                        <li>Individual sphere performance</li>
+                        <li>Sphere interdependencies</li>
+                        <li>Your personal priorities</li>
+                        <li>Historical trends</li>
+                        <li>Cross-sphere correlations</li>
+                        <li>Velocity of change</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3 class="mb-md">Example Breakdown</h3>
+                    <div style="margin-bottom: 2rem;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <span>Health</span>
+                            <span style="color: #10B981; font-weight: 700; font-size: 1.2rem;">87</span>
+                        </div>
+                        <div style="width: 100%; background: rgba(255,255,255,0.1); border-radius: 8px; height: 8px;">
+                            <div style="width: 87%; background: #10B981; border-radius: 8px; height: 8px;"></div>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <span>Finance</span>
+                            <span style="color: #F59E0B; font-weight: 700; font-size: 1.2rem;">72</span>
+                        </div>
+                        <div style="width: 100%; background: rgba(255,255,255,0.1); border-radius: 8px; height: 8px;">
+                            <div style="width: 72%; background: #F59E0B; border-radius: 8px; height: 8px;"></div>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <span>Goals</span>
+                            <span style="color: #8B5CF6; font-weight: 700; font-size: 1.2rem;">81</span>
+                        </div>
+                        <div style="width: 100%; background: rgba(255,255,255,0.1); border-radius: 8px; height: 8px;">
+                            <div style="width: 81%; background: #8B5CF6; border-radius: 8px; height: 8px;"></div>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <span>Social</span>
+                            <span style="color: #EC4899; font-weight: 700; font-size: 1.2rem;">65</span>
+                        </div>
+                        <div style="width: 100%; background: rgba(255,255,255,0.1); border-radius: 8px; height: 8px;">
+                            <div style="width: 65%; background: #EC4899; border-radius: 8px; height: 8px;"></div>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <span>Business</span>
+                            <span style="color: #3B82F6; font-weight: 700; font-size: 1.2rem;">91</span>
+                        </div>
+                        <div style="width: 100%; background: rgba(255,255,255,0.1); border-radius: 8px; height: 8px;">
+                            <div style="width: 91%; background: #3B82F6; border-radius: 8px; height: 8px;"></div>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <span>Development</span>
+                            <span style="color: #14B8A6; font-weight: 700; font-size: 1.2rem;">78</span>
+                        </div>
+                        <div style="width: 100%; background: rgba(255,255,255,0.1); border-radius: 8px; height: 8px;">
+                            <div style="width: 78%; background: #14B8A6; border-radius: 8px; height: 8px;"></div>
+                        </div>
+                    </div>
+
+                    <div style="border-top: 2px solid rgba(255,255,255,0.2); padding-top: 1rem; margin-top: 2rem;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 1.2rem; font-weight: 700;">Life Score</span>
+                            <span style="font-size: 2rem; font-weight: 900; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">79</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It's Calculated -->
+    <section class="section" style="background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="gradient-text">How Oracle Calculates Your Score</h2>
+                <p class="section-subtitle">
+                    Not a simple average. A sophisticated algorithm that sees the whole.
+                </p>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="card">
+                    <h3 style="color: #667eea;">1. Base Scores</h3>
+                    <p class="text-light">
+                        Each sphere gets a score (0-100) based on its own metrics. 
+                        Vita scores Health. Argentum scores Finance. And so on.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3 style="color: #764ba2;">2. Weighted Importance</h3>
+                    <p class="text-light">
+                        You can weight spheres differently. Entrepreneur? Business might be 30%. 
+                        New parent? Social/Health might be 40%.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3 style="color: #f093fb;">3. Correlations</h3>
+                    <p class="text-light">
+                        Oracle discovers connections. If Health ↑ correlates with Business ↑, 
+                        that synergy boosts your score.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3 style="color: #667eea;">4. Velocity</h3>
+                    <p class="text-light">
+                        A sphere moving up? Bonus. Stagnant for weeks? Penalty. 
+                        Direction matters as much as position.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3 style="color: #764ba2;">5. Balance</h3>
+                    <p class="text-light">
+                        91 in Business but 42 in Health? That's unsustainable. Oracle penalizes 
+                        extreme imbalance.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3 style="color: #f093fb;">6. Your Goals</h3>
+                    <p class="text-light">
+                        Your goals inform priority. 56 goals across spheres tell Oracle 
+                        what matters to you.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Score Ranges -->
+    <section class="section">
+        <div class="container">
+            <h2 class="gradient-text text-center mb-lg">Understanding Your Score</h2>
+
+            <div class="grid grid-auto">
+                <div class="card" style="border-left: 3px solid #EF4444;">
+                    <h3 style="color: #EF4444;">0-40: Crisis</h3>
+                    <p class="text-light">
+                        Multiple spheres failing. Immediate intervention needed. 
+                        Oracle triggers emergency mode with aggressive nudges.
+                    </p>
+                </div>
+
+                <div class="card" style="border-left: 3px solid #F59E0B;">
+                    <h3 style="color: #F59E0B;">41-60: Struggling</h3>
+                    <p class="text-light">
+                        Some areas weak. Unsustainable patterns. Oracle identifies 
+                        the weakest sphere and prioritizes fixes.
+                    </p>
+                </div>
+
+                <div class="card" style="border-left: 3px solid #F59E0B;">
+                    <h3 style="color: #F59E0B;">61-75: Functional</h3>
+                    <p class="text-light">
+                        Baseline okay. Room for growth. Oracle pushes you toward 
+                        optimization in specific areas.
+                    </p>
+                </div>
+
+                <div class="card" style="border-left: 3px solid #10B981;">
+                    <h3 style="color: #10B981;">76-85: Thriving</h3>
+                    <p class="text-light">
+                        Most spheres healthy. Good balance. Oracle helps maintain 
+                        and suggests incremental improvements.
+                    </p>
+                </div>
+
+                <div class="card" style="border-left: 3px solid #667eea;">
+                    <h3 style="color: #667eea;">86-95: Excellent</h3>
+                    <p class="text-light">
+                        All spheres strong. Sustainable patterns. Oracle focuses on 
+                        maintaining excellence and preventing regression.
+                    </p>
+                </div>
+
+                <div class="card" style="border-left: 3px solid #8B5CF6;">
+                    <h3 style="color: #8B5CF6;">96-100: Peak</h3>
+                    <p class="text-light">
+                        Rare. All spheres optimal. Synergies strong. Oracle helps 
+                        you stay at peak without burning out.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Oracle Insights -->
+    <section class="section" style="background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px);">
+        <div class="container">
+            <h2 class="gradient-text text-center mb-lg">Oracle's Insights</h2>
+            <p class="text-center text-light mb-lg" style="max-width: 700px; margin: 0 auto 3rem;">
+                Oracle doesn't just give you a number. It tells you what to do about it.
+            </p>
+
+            <div class="grid grid-2">
+                <div class="card">
+                    <h3 style="color: #667eea;">Example Insight #1</h3>
+                    <div style="background: rgba(102, 126, 234, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid #667eea; margin-top: 1rem;">
+                        <p style="color: #a0a0a0; font-style: italic;">
+                            "Life Score: 79/100. Strong business performance compensating for weak social sphere. 
+                            This is unsustainable. Recommendation: Schedule 2 social events this week. 
+                            Projected impact: Social 65→72, Life Score 79→82."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 style="color: #667eea;">Example Insight #2</h3>
+                    <div style="background: rgba(102, 126, 234, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid #667eea; margin-top: 1rem;">
+                        <p style="color: #a0a0a0; font-style: italic;">
+                            "Correlation discovered: Health ↑ → Business ↑ (r=0.87). Your morning workouts lead to 
+                            +32% productivity. Lock this schedule. Protect health sphere to maintain business excellence."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 style="color: #667eea;">Example Insight #3</h3>
+                    <div style="background: rgba(102, 126, 234, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid #667eea; margin-top: 1rem;">
+                        <p style="color: #a0a0a0; font-style: italic;">
+                            "Finance sphere declining for 3 weeks (-8 points). Excess spending detected: +€340. 
+                            If trend continues: Life Score 79→74 by month end. Action: Review budget tonight."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 style="color: #667eea;">Example Insight #4</h3>
+                    <div style="background: rgba(102, 126, 234, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid #667eea; margin-top: 1rem;">
+                        <p style="color: #a0a0a0; font-style: italic;">
+                            "All spheres improving simultaneously (+2-4 points each). Momentum building. 
+                            Life Score velocity: +1.2 points/week. At this rate: 85/100 in 30 days. Maintain this."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tracking Over Time -->
+    <section class="section">
+        <div class="container text-center">
+            <h2 class="gradient-text mb-md">Track Your Progress</h2>
+            <p class="text-light mb-lg" style="font-size: 1.1rem;">
+                Your Life Score updates daily. See trends, patterns, and progress over time.
+            </p>
+
+            <div class="card" style="max-width: 800px; margin: 0 auto;">
+                <h3 class="mb-md">Example: 90-Day Trend</h3>
+                <div style="text-align: left; color: #a0a0a0; line-height: 2;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <span>Day 1:</span>
+                        <span>68/100 (Starting point)</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <span>Day 30:</span>
+                        <span>74/100 (+6, slow build)</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <span>Day 60:</span>
+                        <span>79/100 (+5, momentum)</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <span>Day 90:</span>
+                        <span style="color: #10B981; font-weight: 700;">84/100 (+5, thriving)</span>
+                    </div>
+                </div>
+                <p style="margin-top: 2rem; font-style: italic; color: #667eea;">
+                    "16-point improvement in 90 days. All spheres strengthening. Sustainable patterns established."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" style="background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px);">
+        <div class="container text-center">
+            <h2 class="gradient-text mb-md">Know Your Truth</h2>
+            <p class="text-light mb-lg" style="font-size: 1.2rem;">
+                Stop guessing. Stop hoping. Start knowing.
+            </p>
+            <a href="index.html#waitlist" class="btn btn-primary btn-large">Join Waitlist</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p class="footer-tagline">Don't Panic</p>
+            <p class="footer-text">
+                My42 - The Life Operating System. Coming soon.
+            </p>
+            <div class="footer-links">
+                <a href="mailto:hello@my42.xyz" class="footer-link">Email</a>
+                <a href="https://twitter.com/my42" class="footer-link" target="_blank">Twitter</a>
+                <a href="https://t.me/my42" class="footer-link" target="_blank">Telegram</a>
+            </div>
+            <p class="copyright">
+                © 2026 My42. The answer to everything.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        function createStars() {
+            const starsContainer = document.getElementById('stars');
+            const numberOfStars = 100;
+            
+            for (let i = 0; i < numberOfStars; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.animationDelay = Math.random() * 3 + 's';
+                starsContainer.appendChild(star);
+            }
+        }
+
+        window.addEventListener('load', createStars);
+    </script>
+</body>
+</html>

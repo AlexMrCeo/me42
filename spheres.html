@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 6 Life Spheres - My42</title>
+    <meta name="description" content="6 spheres. 6 AI agents. Health, Finance, Goals, Social, Business, Development. Your life, orchestrated.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <div class="cosmic-bg"></div>
+    <div class="stars" id="stars"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">my42</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="spheres.html" class="nav-link active">Spheres</a></li>
+                <li><a href="life-score.html" class="nav-link">Life Score</a></li>
+                <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+            </ul>
+            <a href="index.html#waitlist" class="nav-cta">Join Waitlist</a>
+            <button class="nav-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="section text-center">
+        <div class="container">
+            <h1 class="gradient-text">The 6 Life Spheres</h1>
+            <p class="text-light" style="font-size: 1.3rem; max-width: 800px; margin: 2rem auto;">
+                Each sphere of your life has a dedicated AI agent. Observing. Learning. Optimizing. 
+                Together, they form the complete picture.
+            </p>
+        </div>
+    </section>
+
+    <!-- Spheres Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2" style="gap: 3rem;">
+                
+                <!-- Health Sphere -->
+                <div class="card card-health">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div style="font-size: 3rem;">🏃</div>
+                        <div>
+                            <h2 style="color: #10B981; margin: 0;">Health</h2>
+                            <p style="color: #808080; margin: 0; font-size: 0.9rem;">AI Agent: Vita</p>
+                        </div>
+                    </div>
+
+                    <p class="text-light mb-md" style="font-size: 1.1rem;">
+                        Your body is the foundation. Vita ensures it performs at peak.
+                    </p>
+
+                    <h4 style="color: #10B981; margin-top: 2rem; margin-bottom: 1rem;">What Vita Tracks</h4>
+                    <ul style="color: #a0a0a0; line-height: 1.8;">
+                        <li>WHOOP recovery & strain scores</li>
+                        <li>Apple Health / Apple Watch data</li>
+                        <li>Workout frequency & intensity</li>
+                        <li>Sleep quality & duration</li>
+                        <li>Heart rate variability</li>
+                        <li>Steps & daily activity</li>
+                        <li>Nutrition (via Cal AI integration)</li>
+                    </ul>
+
+                    <h4 style="color: #10B981; margin-top: 2rem; margin-bottom: 1rem;">What Vita Does</h4>
+                    <ul style="color: #a0a0a0; line-height: 1.8;">
+                        <li>"Recovery at 87%. Ready to push today."</li>
+                        <li>"4 days no workout. UNACCEPTABLE."</li>
+                        <li>"Sleep debt: 2.3 hours. Early night tonight."</li>
+                        <li>"Workout consistency: 12-day streak. Keep going."</li>
+                        <li>Suggests optimal workout times based on recovery</li>
+                        <li>Correlates sleep with next-day performance</li>
+                    </ul>
+
+                    <div style="margin-top: 2rem;">
+                        <a href="health.html" class="btn btn-primary">Explore Health Sphere →</a>
+                    </div>
+                </div>
+
+                <!-- Finance Sphere -->
+                <div class="card card-finance">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div style="font-size: 3rem;">💰</div>
+                        <div>
+                            <h2 style="color: #F59E0B; margin: 0;">Finance</h2>
+                            <p style="color: #808080; margin: 0; font-size: 0.9rem;">AI Agent: Argentum</p>
+                        </div>
+                    </div>
+
+                    <p class="text-light mb-md" style="font-size: 1.1rem;">
+                        Money is energy. Argentum ensures it flows correctly.
+                    </p>
+
+                    <h4 style="color: #F59E0B; margin-top: 2rem; margin-bottom: 1rem;">What Argentum Tracks</h4>
+                    <ul style="color: #a0a0a0; line-height: 1.8;">
+                        <li>Revolut / bank account analysis</li>
+                        <li>Income & revenue streams</li>
+                        <li>Spending by category</li>
+                        <li>Excess spending detection</li>
+                        <li>Monthly budget vs actual</li>
+                        <li>Investment portfolio (if connected)</li>
+                        <li>Net worth trends</li>
+                    </ul>
+
+                    <h4 style="color: #F59E0B; margin-top: 2rem; margin-bottom: 1rem;">What Argentum Does</h4>
+                    <ul style="color: #a0a0a0; line-height: 1.8;">
+                        <li>"Excess spending: Coffee +€47 this week."</li>
+                        <li>"Income growth: +23% vs last month."</li>
+                        <li>"Budget surplus: €340. Invest or save?"</li>
+                        <li>"Subscription alert: €29.99 unused service."</li>
+                        <li>Optimizes monthly budget using ML</li>
+                        <li>Suggests investment opportunities</li>
+                    </ul>
+
+                    <div style="margin-top: 2rem;">
+                        <a href="finance.html" class="btn btn-primary">Explore Finance Sphere →</a>
+                    </div>
+                </div>
+
+                <!-- Goals Sphere -->
+                <div class="card card-goals">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div style="font-size: 3rem;">🎯</div>
+                        <div>
+                            <h2 style="color: #8B5CF6; margin: 0;">Goals</h2>
+                            <p style="color: #808080; margin: 0; font-size: 0.9rem;">AI Agent: Apex</p>
+                        </div>
+                    </div>
+
+                    <p class="text-light mb-md" style="font-size: 1.1rem;">
+                        Goals give direction. Apex ensures you reach them.
+                    </p>
+
+                    <h4 style="color: #8B5CF6; margin-top: 2rem; margin-bottom: 1rem;">What Apex Tracks</h4>
+                    <ul style="color: #a0a0a0; line-height: 1.8;">
+                        <li>56 goals across all life spheres</li>
+                        <li>Daily & weekly tasks</li>
+                        <li>Task completion rate</li>
+                        <li>Goal-to-task correlation</li>
+                        <li>Progress velocity per goal</li>
+                        <li>Stalled goals (14+ days no progress)</li>
+                        <li>Voice-logged accomplishments</li>
+                    </ul>
+
+                    <h4 style="color: #8B5CF6; margin-top: 2rem; margin-bottom: 1rem;">What Apex Does</h4>
+                    <ul style="color: #a0a0a0; line-height: 1.8;">
+                        <li>"3 goals stalled. Time to recommit."</li>
+                        <li>"You're 87% to Level 42. Push harder."</li>
+                        <li>"Task-goal alignment: 92%. Excellent."</li>
+                        <li>"Daily check-in: What did you accomplish?"</li>
+                        <li>Voice control: "Mark workout as done"</li>
+                        <li>Generates daily tasks from goals</li>
+                        <li>Aggressive reminders when needed</li>
+                    </ul>
+
+                    <div style="margin-top: 2rem;">
+                        <a href="goals.html" class="btn btn-primary">Explore Goals Sphere →</a>
+                    </div>
+                </div>
+
+                <!-- Social Sphere -->
+                <div class="card card-social">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div style="font-size: 3rem;">👥</div>
+                        <div>
+                            <h2 style="color: #EC4899; margin: 0;">Social</h2>
+                            <p style="color: #808080; margin: 0; font-size: 0.9rem;">AI Agent: Nexus</p>
+                        </div>
+                    </div>
+
+                    <p class="text-light mb-md" style="font-size: 1.1rem;">
+                        Humans are social. Nexus keeps you connected.
+                    </p>
+
+                    <h4 style="color: #EC4899; margin-top: 2rem; margin-bottom: 1rem;">What Nexus Tracks</h4>
+                    <ul style="color: #a0a0a0; line-height: 1.8;">
+                        <li>Location services (days at home vs out)</li>
+                        <li>Friend meetups frequency</li>
+                        <li>Social events attended</li>
+                        <li>Travel score from location data</li>
+                        <li>Relationship maintenance (last contacted)</li>
+                        <li>Network size & engagement</li>
+                        <li>Friends' Life Scores (shared)</li>
+                    </ul>
+
+                    <h4 style="color: #EC4899; margin-top: 2rem; margin-bottom: 1rem;">What Nexus Does</h4>
+                    <ul style="color: #a0a0a0; line-height: 1.8;">
+                        <li>"You've been home 4 days. MOVE."</li>
+                        <li>"Friends nearby: Alex (2km), Maria (5km)."</li>
+                        <li>"Last meetup: 8 days ago. Time to connect."</li>
+                        <li>"Social score dropping. Schedule 2 events."</li>
+                        <li>Suggests activities based on location</li>
+                        <li>Reminds to reach out to neglected friends</li>
+                        <li>Tracks travel for social exploration</li>
+                    </ul>
+
+                    <div style="margin-top: 2rem;">
+                        <a href="social.html" class="btn btn-primary">Explore Social Sphere →</a>
+                    </div>
+                </div>
+
+                <!-- Business Sphere -->
+                <div class="card card-business">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div style="font-size: 3rem;">💼</div>
+                        <div>
+                            <h2 style="color: #3B82F6; margin: 0;">Business</h2>
+                            <p style="color: #808080; margin: 0; font-size: 0.9rem;">AI Agent: Forge</p>
+                        </div>
+                    </div>
+
+                    <p class="text-light mb-md" style="font-size: 1.1rem;">
+                        Work is impact. Forge ensures maximum results.
+                    </p>
+
+                    <h4 style="color: #3B82F6; margin-top: 2rem; margin-bottom: 1rem;">What Forge Tracks</h4>
+                    <ul style="color: #a0a0a0; line-height: 1.8;">
+                        <li>Project velocity & completion rate</li>
+                        <li>Revenue & income sources</li>
+                        <li>YouTube analytics (views, subscribers)</li>
+                        <li>Employment status & role changes</li>
+                        <li>Company/startup metrics</li>
+                        <li>Time spent on deep work</li>
+                        <li>Business goal alignment</li>
+                    </ul>
+
+                    <h4 style="color: #3B82F6; margin-top: 2rem; margin-bottom: 1rem;">What Forge Does</h4>
+                    <ul style="color: #a0a0a0; line-height: 1.8;">
+                        <li>"Project velocity: -23%. Action needed."</li>
+                        <li>"YouTube: +42k views this week. Trending."</li>
+                        <li>"Revenue: €12.5k. +18% vs last month."</li>
+                        <li>"Deep work: 4.2hrs/day. Below target."</li>
+                        <li>Identifies stalled projects</li>
+                        <li>Correlates work output with other spheres</li>
+                        <li>Suggests optimization strategies</li>
+                    </ul>
+
+                    <div style="margin-top: 2rem;">
+                        <a href="business.html" class="btn btn-primary">Explore Business Sphere →</a>
+                    </div>
+                </div>
+
+                <!-- Development Sphere -->
+                <div class="card card-development">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div style="font-size: 3rem;">📚</div>
+                        <div>
+                            <h2 style="color: #14B8A6; margin: 0;">Development</h2>
+                            <p style="color: #808080; margin: 0; font-size: 0.9rem;">AI Agent: Sage</p>
+                        </div>
+                    </div>
+
+                    <p class="text-light mb-md" style="font-size: 1.1rem;">
+                        Growth is infinite. Sage guides continuous learning.
+                    </p>
+
+                    <h4 style="color: #14B8A6; margin-top: 2rem; margin-bottom: 1rem;">What Sage Tracks</h4>
+                    <ul style="color: #a0a0a0; line-height: 1.8;">
+                        <li>Books read (quantity & completion)</li>
+                        <li>Course progress & completion</li>
+                        <li>Skills being developed</li>
+                        <li>Learning time invested</li>
+                        <li>Knowledge retention metrics</li>
+                        <li>Reading list queue</li>
+                        <li>Skill correlation with goals</li>
+                    </ul>
+
+                    <h4 style="color: #14B8A6; margin-top: 2rem; margin-bottom: 1rem;">What Sage Does</h4>
+                    <ul style="color: #a0a0a0; line-height: 1.8;">
+                        <li>"12 days since last book. Queue: 3 titles."</li>
+                        <li>"Course progress: 67%. Finish this week."</li>
+                        <li>"Learning velocity: 4.2hrs/week. Consistent."</li>
+                        <li>"Skill gap: Python. 3 courses recommended."</li>
+                        <li>Suggests learning based on goals</li>
+                        <li>Reminds about incomplete courses</li>
+                        <li>Tracks knowledge compound effect</li>
+                    </ul>
+
+                    <div style="margin-top: 2rem;">
+                        <a href="development.html" class="btn btn-primary">Explore Development Sphere →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration Section -->
+    <section class="section" style="background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px);">
+        <div class="container text-center">
+            <h2 class="gradient-text mb-md">The Oracle Coordinates</h2>
+            <p class="text-light mb-lg" style="font-size: 1.2rem; max-width: 800px; margin: 0 auto 3rem;">
+                6 agents observe. Oracle connects. Your Life Score emerges from the whole.
+            </p>
+
+            <div class="card" style="max-width: 600px; margin: 0 auto;">
+                <h3 class="mb-md">Example: The Health-Business Connection</h3>
+                <div style="text-align: left; color: #a0a0a0; line-height: 1.8;">
+                    <p><strong style="color: #10B981;">Vita observes:</strong> Morning workout completed at 7am.</p>
+                    <p><strong style="color: #3B82F6;">Forge observes:</strong> Deep work session 9am-12pm. High output.</p>
+                    <p><strong style="color: #667eea;">Oracle discovers:</strong> Correlation coefficient: 0.87</p>
+                    <p><strong style="color: #667eea;">Oracle recommends:</strong> "Lock 7am workout schedule. ROI: +32% productivity."</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 3rem;">
+                <a href="life-score.html" class="btn btn-primary btn-large">Understand Life Score</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p class="footer-tagline">Don't Panic</p>
+            <p class="footer-text">
+                My42 - The Life Operating System. Coming soon.
+            </p>
+            <div class="footer-links">
+                <a href="mailto:hello@my42.xyz" class="footer-link">Email</a>
+                <a href="https://twitter.com/my42" class="footer-link" target="_blank">Twitter</a>
+                <a href="https://t.me/my42" class="footer-link" target="_blank">Telegram</a>
+            </div>
+            <p class="copyright">
+                © 2026 My42. The answer to everything.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Generate stars
+        function createStars() {
+            const starsContainer = document.getElementById('stars');
+            const numberOfStars = 100;
+            
+            for (let i = 0; i < numberOfStars; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.animationDelay = Math.random() * 3 + 's';
+                starsContainer.appendChild(star);
+            }
+        }
+
+        window.addEventListener('load', createStars);
+    </script>
+</body>
+</html>
